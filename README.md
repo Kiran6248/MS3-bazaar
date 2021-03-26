@@ -15,13 +15,14 @@ This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **Mong
 
 * [Overview](#overview)
 
-* [User Experiencs (UX)](#user-experience-(ux))
-    * [User Stories](#user-stories)
-    * [Business Stories](#business-stories)
+* [User Experience](#user-experience)
+    
     * [User Goals](#user-goals)
     * [Business Goals](#business-goals)
+    * [User Stories](#user-stories)
+    * [Business Stories](#business-stories)
 
-* [UX](#ux)
+* [Planes of Development](#planes-of-development)
     * [Strategy](#strategy)
     * [Scope](#scope)
     * [Structure](#structure)
@@ -57,6 +58,63 @@ This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **Mong
     * [Content](#content)
     * [Media](#media)
     * [Acknowledgments](#acknowledgments)
+***
 
 ## **Overview**
+
+A Bazaar is a permanently enclosed marketplace or street where good and services are exchanged or sold. The term bazaar originates from the Persian word **bazar**.
+
+I decided to keep *Bazaar* as name of my site because it also server that purpose.
+
+This website is created as a platform to meet and know about potential buyers and sellers.
+
+This is created for educational purpose only as my Third Milestone Project for Code Institute.
+This site is made by using my new learned skill of Backend Development with the addition of Frontend Development.
+***
+
+## **User experience**
+
+### **User Goals**
+
+1. Somewhere to search for few things which I want for a short term and do not want to pay heavy price.
+2. To find some place where I can sell some of my Favourite things, which I do not need anymore.
+3. To find buyer for my favourite things, which I can't keep anymore and don't want to throw in garbage as well.
+4. Buyers who are relocating, can find things in resonable rate for the initial setup of their home and office.
+5. In the current Pandemic situation, User may want to browse things from the safe environment of their home.
+6. User friendly website, where I don't have to be very technically educated to publish my ads.
+
+### **Business Goals**
+
+1. During the current world condition, when it is difficult to find Non-essential shops, this site would provide a place to buy and sell some useful items.
+2. A website, where Buyer and Seller can easily contact each other, if they are interested in any product posted here.
+3. An easy to navigate site, with buttons provided for these paths through the site.
+4. All the items will be categorised and will be easy to search, to save the time and energy of everyone.
+5. 5. The site owner will have the full control on every post, and He/She can add or remove categories or ads.
+
+
+### **User Stories**
+ **Visitor Stories**
+1. As a new visitor, I want to be able to easily find the product that I am looking for.
+2. As a new visitor, I want to search the product based on their category.
+3. As a new visitor, I want to first select the item by its appearance and price.
+4. As a new visitor, I want to contact the seller if I want to buy Something.
+5. As a new visitor, I want to be able to contact the admin of the page if I am not satisfied with my purchase.
+6. As a new visitor, I want to register my account easily if I want to sell something.
+7. As a returning visitor, I want to login easily and make some changes in my product. i.e. price.
+8. As a returning visitor, I want to login easily and remove my product from the site if it is sold.
+9. as a regular visitor, I want to navigate easily through the pages.
+10. As a regular visitor, I want to see details of each item clearly.
+11. As a regular visitor, I want to login from my mobile and expect the site and image to be fully responsive.
+
+### **Business Stories**
+
+  As the site owner I want/expect/need:
+  1. To display the ads in a colourful manner.
+  2. To manage all the ads posted in the site and delete any appropriate one.
+  3. To add more categories later if required.
+  4. The Buyers/Sellers can contact me easily through a contact form or they can find me in social media accounts.
+  ***
+
+
+
 
