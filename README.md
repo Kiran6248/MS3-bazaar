@@ -143,6 +143,16 @@ Admin will have the power to delete any post, if that is unsuitable for the page
 All the data will be stored in MongoDB and Flask framework will be used to develop the site and finally it will be deployed by using Heroku.
 
 
+### **Skeleton**
+#### **Wireframe**
+The wireframe for this project has been made for Three screen sizes(Mobile View, Tablet View, and Laptop View). Each page is shown in al three 
+screen sizes on a single page foe a better understanding of the responsiveness of the page.
+
+The wireframes for this Project can be seen here.
+[Wireframe](static/images/wireframe.pdf)
+
+
+
 
 
 
