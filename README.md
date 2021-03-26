@@ -151,6 +151,18 @@ screen sizes on a single page foe a better understanding of the responsiveness o
 The wireframes for this Project can be seen here.
 [Wireframe](static/images/wireframe.pdf)
 
+#### **Database Schema**
+The Schema is pepared for the better understanding of the Database Collection.
+
+This Project has 4 collection. Ads, Category types, Condition of goods and Users.
+
+Database Schema can be seen here. [Schema](static/images/schema.pdf)
+
+#### **Sitemap**
+Sitemap is prepared for this site to understand the navigation og the pages.
+
+Sitemap can be seen here. [Sitemap](static/images/sitemap.pdf)
+
 
 
 
