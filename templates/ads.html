@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bazaar</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>I am extending the base template!</h2>
+    
     {% for ad in ads %}
         {{ ad.ad_title }}<br>
         {{ ad.category_name }}<br>
@@ -18,5 +15,5 @@
         {{ ad.telephone }}<br>
         {{ ad.is_available }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
