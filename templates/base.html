@@ -16,7 +16,7 @@
     <header>
         <!--navbar is referred from the mini project in backend development-->
         <!--top navbar-->
-        <nav class="nav-extended text-shadow teal lighten-1">
+        <nav class="nav-extended text-shadow teal">
             <div class="nav-wrapper">
                 <a href="{{ url_for('get_ads') }}" class="brand-logo">Bazaar</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
@@ -34,7 +34,7 @@
         
         <!--mobile sidenav-->
         <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align teal-text text-lighten-1">Bazaar</h4></li>
+            <li><h4 class="center-align teal-text text-darken-1">Bazaar</h4></li>
             <li><a href="{{ url_for('get_ads') }}">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Post Ad</a></li>
@@ -45,8 +45,36 @@
         </ul>
     </header>
 
-    {% block content %}
-    {% endblock %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!--footer-->
+    <!--code for footer is taken from https://materializecss.com/footer.html-->
+    <footer class="page-footer teal darken-3 text-shadow">
+        <div class="container">
+            <div class="row center-align">
+                <div class="col s12 m6">
+                    <p><i class="fas fa-map-marker-alt"></i> North City, Dublin 2(fictive)</p>
+                    <p><i class="fas fa-envelope"></i> bazaar@email.com (fictive)</p>
+                    <p><i class="fas fa-phone"></i> +353 55 55 555 (fictive)</p>
+                </div>
+                <div class="col s12 m6">
+                    <p class="copyright text-muted">Copyright &copy; Bazaar <span id="copyright"></span></p>
+                    <p>Created for education purposes only</p>
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/Kiran6248"><i class="fab fa-github-square"
+                                    aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/kiran-kumari-satyarthy-44293738/"><i
+                                    class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
