@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaar</title>
+</head>
+<body>
+    {% for ad in ads %}
+        {{ ad.ad_title }}<br>
+        {{ ad.category_name }}<br>
+        {{ ad.ad_description }}<br>
+        {{ ad.photo_url }}<br>
+        {{ ad.price }}<br>
+        {{ ad.condition_type }}<br>
+        {{ ad.location }}<br>
+        {{ ad.email }}<br>
+        {{ ad.telephone }}<br>
+        {{ ad.is_available }}<br>
+    {% endfor %}
+</body>
+</html>
