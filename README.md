@@ -163,6 +163,17 @@ Sitemap is prepared for this site to understand the navigation og the pages.
 
 Sitemap can be seen here. [Sitemap](static/images/sitemap.pdf)
 
+### **Surface**
+#### **Color**
+The color theme is used from Materializecss.com and it is been decides to make Navbar and Footer of #26a69a (teal lighten-1)
+
+#### **Typography**
+Google font **Roboto Slab** with a fallback of **sans serif** is selected for the entire project.
+
+#### **Images**
+The images used in this project are taken by the developer and are subject of demonstration only.
+***
+
 
 
 
