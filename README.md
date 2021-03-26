@@ -115,6 +115,38 @@ This site is made by using my new learned skill of Backend Development with the 
   4. The Buyers/Sellers can contact me easily through a contact form or they can find me in social media accounts.
   ***
 
+## **Planes of Development**
+### **Strategy**
+
+The aim of making this site is to make a website which has CRUD mechanism and Database access functionality.
+I decided to make a second Hand goods buying ans selling site, which will work as a platform for peoples to meet potential buyers for their things, 
+as well sellers can find items in resonable rates.
+
+### **Scope**
+
+I want to make a website which is accessible to everyone, People can browse items without being Registered, so that there will be no hesitation in searching anything.
+People can post their items for sell using simple steps and buyers can contact sellers from the contact details provides.
+It will be easier to see details of every item as it will open in a new page. 
+Users can contact the admin easily for Feedback or Complaints.
+
+### **Structure**
+
+This website will be a multi-page site, where pages are connected through Navigation Bar or Python. 
+The navigation bar will have links for home page, Login, Register and Contact form. The navigation links will chnage ans show logout and Post ad option Once the user is logged in.
+The navigation bar will be collapsible for Mobile view and expand in sidebar when clicked.
+There will be a footer, which will show the contact details of the admin. It will be sticky and always remain in the end of the page.
+2 forms will be there, one for Login and other for Registeration. 
+One contact form will also be there for the users to contact the admin.
+There will be pages for Posting the ads and Editing the already published ads.
+Users can delete their posts if they want.
+Admin will have the power to delete any post, if that is unsuitable for the page.
+All the data will be stored in MongoDB and Flask framework will be used to develop the site and finally it will be deployed by using Heroku.
+
+
+
+
+
+
 
 
 
