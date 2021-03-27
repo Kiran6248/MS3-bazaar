@@ -75,6 +75,10 @@ nav ul li a {
     position: relative;
 }
 
+/*------------------------------------------------dividers*/
+.row .col .card .card-content .divider {
+    background-color: #004d40;
+}
 
 
 

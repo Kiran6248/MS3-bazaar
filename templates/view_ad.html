@@ -1,22 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!--Ad title-->
     <div class="row">
+        <!--Ad title-->
         <div class="col s12">
             <div class="card-panel teal lighten-5">
                <h3 class="center-align teal-text-text-darken-4">
-                   {{ ads.ad_title }}
+                   Buddha
                </h3>
             </div>
         </div>
+
         <!--Back button-->
-        <div class="back-button-container col s6 m8 l10">
+        <div class="back-button-container col">
             <a href="{{ url_for('get_ads') }}" class= "btn teal dareken-2 text-shadow" aria-label="back to ads button">
                 <i class="fas fa-undo-alt left"></i> Back
             </a>
         </div>
     </div>
+        
+    <div class="row">
+        <!--image-->
+        <div class="col s12 m6">
+            <div class= "view-ad-image-container center-align">
+                <img src="https://i.ibb.co/qgvmsnN/buddha.jpg" alt="" class="view-activity-image responsive-img" loading="lazy">
+            </div>
+        </div>
+
+        <!--ad description-->
+        <div class="col s12 m6 card teal lighten-5">
+            <div class="card-content">
+                <span class="card-title center-align activator orange-text text-darken-4">Buddha</span>
+            </div>
+            
+        </div>   
+
+    </div>
+
+
+
+   
 
 
 {% endblock %}
