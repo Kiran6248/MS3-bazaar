@@ -48,9 +48,42 @@ nav ul li a {
     line-height: 40px;
 }
 
+/*------------------------------------------------cards*/
+.card-panel{
+    max-width: 90%;
+    margin: auto;
+}
+
+.welcome {
+   padding-top: 10px;
+}
+
+.welcome p {
+    font-size: 1rem;
+}
+
+/*------------------------------------------------hero image*/
+.hero-home {
+    background-image: url(https://i.ibb.co/YBYM7rp/pexels-sanketh-rao-716107.jpg);
+    background-position: center;
+}
+
+.hero-image {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
 /*------------------------------------------------media query*/
 @media (min-width: 992px){
     .brand-logo {
         margin-left: 3rem;
+    }
+    .card-panel{
+        max-width: 70%;
     }
 }

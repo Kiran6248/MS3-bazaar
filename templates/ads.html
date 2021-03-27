@@ -1,17 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for ad in ads %}
-        {{ ad.ad_title }}<br>
-        {{ ad.category_name }}<br>
-        {{ ad.ad_description }}<br>
-        {{ ad.photo_url }}<br>
-        {{ ad.price }}<br>
-        {{ ad.condition_type }}<br>
-        {{ ad.location }}<br>
-        {{ ad.email }}<br>
-        {{ ad.telephone }}<br>
-        {{ ad.is_available }}<br>
-    {% endfor %}
+    <!--Hero Image-->
+    <div class="row">
+        <div class="col s12 hero-image hero-home"></div>
+    </div>
+
+    <!--welcome note-->
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card-panel teal lighten-5 welcome">
+               <h4 class="center-align orange-text text-darken-4">
+                   Welcome to Bazaar 
+               </h4>
+               <p class="center-align">
+                   A place to Buy and Sell second hand goods, Search what you want and <br>
+                   <em>One man's trash is another Man's treasure!</em>
+               </p>
+            </div>
+        </div>
+    </div>
+
+    <!--search bar-->
+
+    <!--ad card-->
+    <div class="row">
+        <div class="col s12 m6 l3">
+            
+        </div>
+    </div>
 
 {% endblock %}
