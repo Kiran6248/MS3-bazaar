@@ -1,40 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
-
+    
     <div class="row">
-        <!--Ad title-->
-        <div class="col s12">
-            <div class="card-panel teal lighten-5">
-               <h3 class="center-align teal-text-text-darken-4">
-                   Buddha
-               </h3>
-            </div>
-        </div>
-
         <!--Back button-->
         <div class="back-button-container col">
-            <a href="{{ url_for('get_ads') }}" class= "btn teal dareken-2 text-shadow" aria-label="back to ads button">
+            <a href="{{ url_for('get_ads') }}" class="btn teal dareken-2 text-shadow" aria-label="back to ads button">
                 <i class="fas fa-undo-alt left"></i> Back
             </a>
         </div>
     </div>
         
-    <div class="row">
-        <!--image-->
-        <div class="col s12 m6">
-            <div class= "view-ad-image-container center-align">
-                <img src="https://i.ibb.co/qgvmsnN/buddha.jpg" alt="" class="view-activity-image responsive-img" loading="lazy">
-            </div>
+    <div class="container">
+        <div class="row">
+            {% for ad in ads %}
+                <!--image-->
+                <div class="col s12 m6">
+                    <div class="card teal lighten-5">
+                        <div class="card-image">
+                            <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo">
+                        </div>
+                    </div>
+                </div>
+        
+                <!--ad title-->
+                <div class="col s12 m6 card teal lighten-5">
+                    <div class="card-content">
+                        <span class="card-title activator orange-text text-darken-4">{{ ad.ad_title }}<i
+                            class="fas fa-ellipsis-v right"></i></span>
+                    </div>
+                
+                    <div class="divider"></div>
+                    
+                    <!--ad category-->
+                    <p><i class="fas fa-folder-open prefix">{{ ad.category_name }}</i></p>
+                    <div class="divider"></div>
+                    
+                    <!--ad description-->
+                    <p><i class="fas fa-align-left prefix"> {{ ad.ad_description }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad price-->
+                    <p><i class="fas fa-tag prefix"> {{ ad.price }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad condition type-->
+                    <p><i class="fas fa-clipboard prefix"> {{ ad.condition_type }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad location-->
+                    <p><i class="fas fa-tag prefix">{{ ad.location }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad posted by-->
+                    <p><i class="fas fa-user prefix">{{ ad.posted_by }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad email-->
+                    <p><i class="fas fa-envelope prefix">{{ ad.email }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad telephone-->
+                    <p><i class="fas fa-phone prefix">{{ ad.telephone }}</i></p>
+                    <div class="divider"></div>
+
+                    <!--ad availability-->
+                    <p><i class="fas fa-phone prefix">{{ ad.is_available }}</i></p>
+                    
+                </div>
+            {% endfor %}
+
         </div>
-
-        <!--ad description-->
-        <div class="col s12 m6 card teal lighten-5">
-            <div class="card-content">
-                <span class="card-title center-align activator orange-text text-darken-4">Buddha</span>
-            </div>
-            
-        </div>   
-
     </div>
 
 

@@ -27,7 +27,7 @@ def get_ads():
 
 @app.route("/view_ad")
 def view_ad():
-    ads = list(mongo.db.ads.find_one())
+    ads = list(mongo.db.ads.find())
     return render_template("view_ad.html", ads=ads)
 
 
