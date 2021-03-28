@@ -4,7 +4,7 @@
     <h3 class="teal-text text-darken-4 center-align">Post Ad</h3>
 
     <div class="container">
-        <div class="row">
+        <div class="row card-panel teal lighten-5">
             <form class="col s12" method="POST" action="">
                 <!--category-->
                 <div class="row">
@@ -26,7 +26,7 @@
                 </div>
                 <!--title-->
                 <div class="row">
-                    <div class="input-field">
+                    <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix teal-text text-darken-4"></i>
                         <input id="ad_title" name="ad_title" minlength="5"
                         maxlength="15" type="text" class="validate" required>
@@ -35,11 +35,68 @@
                 </div>
                 <!--description-->
                 <div class="row">
-                    <div class="input-field">
+                    <div class="input-field col s12">
                         <i class="fas fa-align-left prefix teal-text text-darken-4"></i>
                         <textarea id="ad_description" name="ad_description" minlength="5"
                         maxlength="100" class="materialize-textarea validate" required></textarea>
                         <label for="ad_description">Description</label>
+                    </div>
+                </div>
+                <!--price-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-tag prefix teal-text text-darken-4"></i>
+                        <input id="price" name="price" type="text" class="validate" required>
+                        <label for="price">Price</label>
+                    </div>
+                </div>
+                <!--condition-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-clipboard prefix teal-text text-darken-4"></i>
+                        <select id="condition_type" name="condition_type" class="validate" required>
+                            <option value=""></option>
+                        </select>
+                        <label for="condition_type">Condition</label>
+                    </div>
+                </div>
+                <!--location-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix teal-text text-darken-4"></i>
+                        <input id="location" name="location" minlength="5"
+                        maxlength="30" type="text" class="validate" required>
+                        <label for="location">Location</label>
+                    </div>
+                </div>
+                <!--telephone-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-phone prefix teal-text text-darken-4"></i>
+                        <input id="telephone" name="telephone" type="tel" maxlength="11" class="validate" required>
+                        <label for="telephone">Telephone</label>
+                    </div>
+                </div>
+                <!--email-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-envelope prefix teal-text text-darken-4"></i>
+                        <input id="email" name="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <!--availability-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="switch">
+                            <i class="fas fa-shopping-cart prefix teal-text text-darken-4"></i>
+                            <label for="is_available">
+                                Sold!
+                                <input type="checkbox" id="is_available" name="is_available">
+                                <span class="lever"></span>
+                                Available
+                            </label>
+                        </div>
                     </div>
                 </div>
             </form>
