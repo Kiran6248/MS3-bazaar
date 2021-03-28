@@ -32,40 +32,46 @@
                     <div class="divider"></div>
                     
                     <!--ad category-->
-                    <p><i class="fas fa-folder-open prefix">{{ ad.category_name }}</i></p>
+                    <p><i class="fas fa-folder-open prefix"></i> {{ ad.category_name }}</p>
                     <div class="divider"></div>
                     
                     <!--ad description-->
-                    <p><i class="fas fa-align-left prefix"> {{ ad.ad_description }}</i></p>
+                    <p><i class="fas fa-align-left prefix"></i> {{ ad.ad_description }}</p>
                     <div class="divider"></div>
 
                     <!--ad price-->
-                    <p><i class="fas fa-tag prefix"> {{ ad.price }}</i></p>
+                    <p><i class="fas fa-tag prefix"></i> Price:-  {{ ad.price }} euro</p>
                     <div class="divider"></div>
 
                     <!--ad condition type-->
-                    <p><i class="fas fa-clipboard prefix"> {{ ad.condition_type }}</i></p>
+                    <p><i class="fas fa-clipboard prefix"></i> Condition:-  {{ ad.condition_type }}</p>
                     <div class="divider"></div>
 
                     <!--ad location-->
-                    <p><i class="fas fa-tag prefix">{{ ad.location }}</i></p>
+                    <p><i class="fas fa-tag prefix"></i> Location:-  {{ ad.location }}</p>
                     <div class="divider"></div>
 
                     <!--ad posted by-->
-                    <p><i class="fas fa-user prefix">{{ ad.posted_by }}</i></p>
+                    <p><i class="fas fa-user prefix"></i> Posted By:-  {{ ad.posted_by }}</p>
                     <div class="divider"></div>
 
                     <!--ad email-->
-                    <p><i class="fas fa-envelope prefix">{{ ad.email }}</i></p>
+                    <p><i class="fas fa-envelope prefix"></i> Email:-  {{ ad.email }}</p>
                     <div class="divider"></div>
 
                     <!--ad telephone-->
-                    <p><i class="fas fa-phone prefix">{{ ad.telephone }}</i></p>
+                    <p><i class="fas fa-phone prefix"></i> Telephone:-  {{ ad.telephone }}</p>
                     <div class="divider"></div>
 
                     <!--ad availability-->
-                    <p><i class="fas fa-phone prefix">{{ ad.is_available }}</i></p>
-                    
+                    <p>
+                    {% if ad.is_available == "on" %}
+                        <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="Available"></i>
+                    {% else %}
+                        <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="SOLD!"></i>
+                    {% endif %}
+                    Available/Sold
+                    </p>
                 </div>
             {% endfor %}
 

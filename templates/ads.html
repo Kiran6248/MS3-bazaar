@@ -29,21 +29,26 @@
             {% for ad in ads %}
                 <div class="col s12 m6 l3">
                     <div class="card teal lighten-5">
+                        <!--ad image-->
                         <div class="card-image activator">
                             <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator orange-text text-darken-4">{{ ad.ad_title }}<i
+                            <!--ad title-->
+                            <span class="card-title activator orange-text text-darken-4"> {{ ad.ad_title }}<i
                                     class="fas fa-ellipsis-v right"></i></span>
                             <div class="divider"></div>
+                            <!--ad category name-->
                             <div class="section">
-                                <p><i class="fas fa-folder-open prefix">{{ ad.ad_description }}</i></p>
+                                <p><i class="fas fa-folder-open prefix"></i> {{ ad.category_name }}</p>
                             </div>
                             <div class="divider"></div>
+                            <!--ad price-->
                             <div class="section">
-                                <p><i class="fas fa-tag prefix">{{ ad.price }}</i></p>
+                                <p><i class="fas fa-tag prefix"></i> Price: {{ ad.price }} euro</p>
                             </div>
                             <div class="divider"></div>
+                            <!--ad availability-->
                             <div class="section">
                                 {% if ad.is_available == "on" %}
                                     <i class="fas fa-shopping-cart tooltipped"
@@ -52,6 +57,7 @@
                                      <i class="fas fa-shopping-cart tooltipped"
                                         data-position="right" data-tooltip="SOLD!"></i>
                                 {% endif %}
+                                Available/Sold
                             </div>
                         </div>
                         <!--view button-->

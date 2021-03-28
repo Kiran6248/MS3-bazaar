@@ -49,10 +49,6 @@ nav ul li a {
 }
 
 /*------------------------------------------------cards*/
-.card-panel{
-    max-width: 90%;
-    margin: auto;
-}
 
 .welcome {
    padding-top: 10px;
@@ -60,6 +56,10 @@ nav ul li a {
 
 .welcome p {
     font-size: 1rem;
+}
+
+.card-content p {
+    font-family: "Roboto Slab", sans-serif !important;
 }
 
 /*------------------------------------------------hero image*/
@@ -80,14 +80,15 @@ nav ul li a {
     background-color: #004d40;
 }
 
+/*------------------------------------------------buttons*/
+.back-button-container {
+    margin-top: 10px;;
+}
 
 
 /*------------------------------------------------media query*/
 @media (min-width: 992px){
     .brand-logo {
         margin-left: 3rem;
-    }
-    .card-panel{
-        max-width: 70%;
     }
 }
