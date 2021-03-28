@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="row card-panel teal lighten-5">
-            <form class="col s12" method="POST" action="">
+            <form class="col s12" method="POST" action="{{ url_for('post_ad') }}">
                 <!--category-->
                 <div class="row">
                     <div class="input-field col s12">
@@ -103,6 +103,14 @@
                                 Available
                             </label>
                         </div>
+                    </div>
+                </div>
+                <!--submit button-->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-large teal darken-2 text-shadow">
+                            Post Ad <i class="fas fa-plus-square right"></i>
+                        </button>
                     </div>
                 </div>
             </form>
