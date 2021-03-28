@@ -11,7 +11,10 @@
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix teal-text text-darken-4"></i>
                         <select name="category_name" id="category_name" class="validate" required>
-                            <option value=""></option>
+                            <option value="" disabled selected>Choose Category</option>
+                            {% for category in categories %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endfor %}
                         </select>
                         <label for="category_name">Category</label>
                     </div>
@@ -55,7 +58,10 @@
                     <div class="input-field col s12">
                         <i class="fas fa-clipboard prefix teal-text text-darken-4"></i>
                         <select id="condition_type" name="condition_type" class="validate" required>
-                            <option value=""></option>
+                            <option value="" disabled selected>Choose Condition Type</option>
+                            {% for condition in conditions %}
+                                <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                            {% endfor %}
                         </select>
                         <label for="condition_type">Condition</label>
                     </div>
