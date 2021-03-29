@@ -143,26 +143,28 @@ def edit_ad(ad_id):
             "is_available": is_available,
             "posted_by": session["user"]
         }
-        mongo.db.ads.insert_one({"_id": ObjectId(ad_id)}, submit)
+        mongo.db.ads.update({"_id": ObjectId(ad_id)}, submit)
         flash("Ad Successfully Updated")
-        
-    ad = mongo.db.tasks.find_one({"_id": ObjectId(ad_id)})
+
+    ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     conditions = mongo.db.conditions.find().sort("condition_type", 1)
     return render_template("edit_ad.html", ad=ad, categories=categories,
                            conditions=conditions)
 
 
-@app.route("/view_ad")
-def view_ad():
-    ads = mongo.db.ads.find()
-    return render_template("view_ad.html", ads=ads)
+@app.route("/delete_ad/<ad_id>")
+def delete_ad(ad_id):
+    mongo.db.ads.remove({"_id": ObjectId(ad_id)})
+    flash("Task Successfully Deleted")
+    return redirect(url_for("get_ads"))
 
-# @app.route("/view_ad/<ad_id>")
-# def view_ad(ad_id):
-#     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
 
-#     return render_template("view_ad.html", ad=ad)
+@app.route("/view_ad/<ad_id>")
+def view_ad(ad_id):
+    ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+
+    return render_template("view_ad.html", ad=ad)
 
 
 if __name__ == "__main__":

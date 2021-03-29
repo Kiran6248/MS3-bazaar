@@ -16,86 +16,99 @@
         
     <div class="container">
         <div class="row center valign">
-            {% for ad in ads %}
-                <!--edit and delete buttons-->
-                {% if (session.user|lower == ad.posted_by|lower) or (session.user|lower == "admin") %}
-                <div class="col s3 m2 l1 center-align">
-                    <button data-target="" class="btn-floating modal-trigger center-align orange" aria-label="delete activity button">
-                        <i class="fas fa-trash-alt fa-ad-delete"></i>
-                    </button>
-                </div>
-                <div class="col s3 m2 l1 center-align">
-                    <a href="{{ url_for('edit_ad', ad_id=ad._id) }} " class="btn-floating center-align teal" aria-label="edit ad button">
-                        <i class="fas fa-pencil-alt fa-ad-edit"></i>
-                    </a>
-                </div>
-                {% endif %}
-                <!--image-->
-                <div class="col s12 m6 l4">
-                    <div class="card z-depth-3 waves-effect waves-block waves-light teal lighten-5">
-                        <div class="card-image ">
-                            <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo">
-                        </div>
+            <!--edit and delete buttons-->
+            {% if (session.user|lower == ad.posted_by|lower) or (session.user|lower == "admin") %}
+            <div class="col s3 m2 l1 center-align">
+                <button data-target="{{ ad._id }}" class="btn-floating modal-trigger center-align orange"
+                    aria-label="delete activity button">
+                    <i class="fas fa-trash-alt fa-ad-delete"></i>
+                </button>
+            </div>
+            <div class="col s3 m2 l1 center-align">
+                <a href="{{ url_for('edit_ad', ad_id=ad._id) }} " class="btn-floating center-align teal"
+                    aria-label="edit ad button">
+                    <i class="fas fa-pencil-alt fa-ad-edit"></i>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="row center valign"> 
+            <!--image-->
+            <div class="col s12 m6 l4">
+                <div class="card z-depth-3 waves-effect waves-block waves-light teal lighten-5">
+                    <div class="card-image image">
+                        <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo">
                     </div>
                 </div>
+            </div>
         
+            <div class="card view-card col s12 m6 z-depth-3 waves-effect waves-block waves-light card teal lighten-5">
                 <!--ad title-->
-                <div class="card view-card col s12 m6 z-depth-3 waves-effect waves-block waves-light card teal lighten-5">
-                    <div class="card-content ">
-                        <span class="card-title activator orange-text text-darken-4">{{ ad.ad_title }}<i
+                <div class="card-content ">
+                    <span class="card-title activator orange-text text-darken-4">{{ ad.ad_title }}<i
                             class="fas fa-ellipsis-v right"></i></span>
-                    </div>
+                </div>
+                <div class="divider"></div>
+                    
+                <!--ad category-->
+                <p><i class="fas fa-folder-open prefix"></i> {{ ad.category_name }}</p>
+                <div class="divider"></div>
                 
-                    <div class="divider"></div>
-                    
-                    <!--ad category-->
-                    <p><i class="fas fa-folder-open prefix"></i> {{ ad.category_name }}</p>
-                    <div class="divider"></div>
-                    
-                    <!--ad description-->
-                    <p><i class="fas fa-align-left prefix"></i> {{ ad.ad_description }}</p>
-                    <div class="divider"></div>
+                <!--ad description-->
+                <p><i class="fas fa-align-left prefix"></i> {{ ad.ad_description }}</p>
+                <div class="divider"></div>
+                
+                <!--ad price-->
+                <p><i class="fas fa-tag prefix"></i> Price:- {{ ad.price }} euro</p>
+                <div class="divider"></div>
 
-                    <!--ad price-->
-                    <p><i class="fas fa-tag prefix"></i> Price:-  {{ ad.price }} euro</p>
-                    <div class="divider"></div>
+                <!--ad condition type-->
+                <p><i class="fas fa-clipboard prefix"></i> Condition:- {{ ad.condition_type }}</p>
+                <div class="divider"></div>
+                
+                <!--ad location-->
+                <p><i class="fas fa-tag prefix"></i> Location:- {{ ad.location }}</p>
+                <div class="divider"></div>
+                
+                <!--ad posted by-->
+                <p><i class="fas fa-user prefix"></i> Posted By:- {{ ad.posted_by }}</p>
+                <div class="divider"></div>
 
-                    <!--ad condition type-->
-                    <p><i class="fas fa-clipboard prefix"></i> Condition:-  {{ ad.condition_type }}</p>
-                    <div class="divider"></div>
-
-                    <!--ad location-->
-                    <p><i class="fas fa-tag prefix"></i> Location:-  {{ ad.location }}</p>
-                    <div class="divider"></div>
-
-                    <!--ad posted by-->
-                    <p><i class="fas fa-user prefix"></i> Posted By:-  {{ ad.posted_by }}</p>
-                    <div class="divider"></div>
-
-                    <!--ad email-->
-                    <p><i class="fas fa-envelope prefix"></i> Email:-  {{ ad.email }}</p>
-                    <div class="divider"></div>
-
-                    <!--ad telephone-->
-                    <p><i class="fas fa-phone prefix"></i> Telephone:-  {{ ad.telephone }}</p>
-                    <div class="divider"></div>
-
-                    <!--ad availability-->
-                    <p>
+                <!--ad email-->
+                <p><i class="fas fa-envelope prefix"></i> Email:- {{ ad.email }}</p>
+                <div class="divider"></div>
+                
+                <!--ad telephone-->
+                <p><i class="fas fa-phone prefix"></i> Telephone:- {{ ad.telephone }}</p>
+                <div class="divider"></div>
+                
+                <!--ad availability-->
+                <p>
                     {% if ad.is_available == "on" %}
-                        <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="Available"></i>
+                    <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="Available"></i>
                     {% else %}
-                        <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="SOLD!"></i>
+                    <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="SOLD!"></i>
                     {% endif %}
                     Available/Sold</p>
-                </div>
-            {% endfor %}
+            </div>
         </div>
     </div>
 
-
-
-   
-
+    <!--delete modal-->
+    <div id="{{ ad._id }}" class="modal">
+        <div class="modal-content">
+            <h4>Confirm Deletion</h4>
+            <p>Are you sure want to delete <span class="special-text">{{ ad.ad_title }}</span></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="btn modal-close teal text-shadow" aria-label="cancel delete button">
+                Cancel <i class="fas fa-undo-alt right"></i>
+            </a>
+            <a href="{{ url_for('delete_ad', ad_id=ad._id) }}" class="btn modal-close orange text-shadow" aria-label="Confirm delete button">
+                Delete <i class="fas fa-trash-alt right"></i>
+            </a>
+        </div>
+    </div>
 
 {% endblock %}

@@ -62,11 +62,13 @@
                         </div>
                         <!--view button-->
                         <div class="row">
+                           
                             <div class="col view-button valign s12 center-align">
-                                <a href="{{ url_for('view_ad') }}" class="btn teal dareken-2 text-shadow">
+                                <a href="{{ url_for('view_ad', ad_id=ad._id) }}" class="btn teal dareken-2 text-shadow">
                                     View <i class="fas fa-plus-square right"></i>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
