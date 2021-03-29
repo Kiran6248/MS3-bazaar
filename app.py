@@ -25,12 +25,6 @@ def get_ads():
     return render_template("ads.html", ads=ads)
 
 
-@app.route("/view_ad")
-def view_ad():
-    ads = list(mongo.db.ads.find())
-    return render_template("view_ad.html", ads=ads)
-
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -105,12 +99,43 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/post_ad")
+@app.route("/post_ad", methods=["GET", "POST"])
 def post_ad():
+    if request.method == "POST":
+        is_available = "on" if request.form.get("is_available") else "off"
+        ad = {
+            "category_name": request.form.get("category_name"),
+            "ad_title": request.form.get("ad_title"),
+            "ad_description": request.form.get("ad_description"),
+            "photo_url": request.form.get("photo_url"),
+            "price": request.form.get("price"),
+            "condition_type": request.form.get("condition_type"),
+            "location": request.form.get("location"),
+            "email": request.form.get("email"),
+            "telephone": request.form.get("telephone"),
+            "is_available": is_available,
+            "posted_by": session["user"]
+        }
+        mongo.db.ads.insert_one(ad)
+        flash("Ad Successfully posted")
+        return redirect(url_for("get_ads"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     conditions = mongo.db.conditions.find().sort("condition_type", 1)
     return render_template("post_ad.html", categories=categories,
                            conditions=conditions)
+
+
+@app.route("/view_ad")
+def view_ad():
+    ads = mongo.db.ads.find()
+    return render_template("view_ad.html", ads=ads)
+
+# @app.route("/view_ad/<ad_id>")
+# def view_ad(ad_id):
+#     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+
+#     return render_template("view_ad.html", ad=ad)
 
 
 if __name__ == "__main__":
