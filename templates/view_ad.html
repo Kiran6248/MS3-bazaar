@@ -8,11 +8,26 @@
                 <i class="fas fa-undo-alt left"></i> Back
             </a>
         </div>
+
+       
     </div>
+
+
         
     <div class="container">
         <div class="row center valign">
             {% for ad in ads %}
+                <!--edit and delete buttons-->
+                <div class="col s3 m2 l1 center-align">
+                    <button data-target="" class="btn-floating modal-trigger center-align orange" aria-label="delete activity button">
+                        <i class="fas fa-trash-alt fa-ad-delete"></i>
+                    </button>
+                </div>
+                <div class="col s3 m2 l1 center-align">
+                    <a href="" class="btn-floating center-align teal" aria-label="edit ad button">
+                        <i class="fas fa-pencil-alt fa-ad-edit"></i>
+                    </a>
+                </div>
                 <!--image-->
                 <div class="col s12 m6 l4">
                     <div class="card z-depth-3 waves-effect waves-block waves-light teal lighten-5">
