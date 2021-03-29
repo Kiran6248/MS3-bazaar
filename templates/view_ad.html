@@ -18,6 +18,7 @@
         <div class="row center valign">
             {% for ad in ads %}
                 <!--edit and delete buttons-->
+                {% if (session.user|lower == ad.posted_by|lower) or (session.user|lower == "admin") %}
                 <div class="col s3 m2 l1 center-align">
                     <button data-target="" class="btn-floating modal-trigger center-align orange" aria-label="delete activity button">
                         <i class="fas fa-trash-alt fa-ad-delete"></i>
@@ -28,6 +29,7 @@
                         <i class="fas fa-pencil-alt fa-ad-edit"></i>
                     </a>
                 </div>
+                {% endif %}
                 <!--image-->
                 <div class="col s12 m6 l4">
                     <div class="card z-depth-3 waves-effect waves-block waves-light teal lighten-5">

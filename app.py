@@ -128,6 +128,24 @@ def post_ad():
 
 @app.route("/edit_ad/<ad_id>", methods=["GET", "POST"])
 def edit_ad(ad_id):
+    if request.method == "POST":
+        is_available = "on" if request.form.get("is_available") else "off"
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "ad_title": request.form.get("ad_title"),
+            "ad_description": request.form.get("ad_description"),
+            "photo_url": request.form.get("photo_url"),
+            "price": request.form.get("price"),
+            "condition_type": request.form.get("condition_type"),
+            "location": request.form.get("location"),
+            "email": request.form.get("email"),
+            "telephone": request.form.get("telephone"),
+            "is_available": is_available,
+            "posted_by": session["user"]
+        }
+        mongo.db.ads.insert_one({"_id": ObjectId(ad_id)}, submit)
+        flash("Ad Successfully Updated")
+        
     ad = mongo.db.tasks.find_one({"_id": ObjectId(ad_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     conditions = mongo.db.conditions.find().sort("condition_type", 1)
