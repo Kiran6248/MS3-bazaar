@@ -11,9 +11,13 @@
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix teal-text text-darken-4"></i>
                         <select name="category_name" id="category_name" class="validate" required>
-                            <option value="" disabled selected>Choose Category</option>
+                            <option value="" disabled>Choose Category</option>
                             {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% if category.category_name == ad.category_name %}
+                                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                                {% else %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                         <label for="category_name">Category</label>
@@ -23,7 +27,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i id="photo-icon" class="fas fa-image prefix teal-text text-darken-4"></i>
-                        <input id="photo_url" name="photo_url" type="text" pattern="https://*.*" class="validate" required>
+                        <input id="photo_url" name="photo_url" type="text" value="{{ ad.photo_url }}" pattern="https://*.*" class="validate" required>
                         <label for="photo_url">Please add photo URL</label>
                     </div>
                 </div>
@@ -32,7 +36,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix teal-text text-darken-4"></i>
                         <input id="ad_title" name="ad_title" minlength="5"
-                        maxlength="15" type="text" class="validate" required>
+                        maxlength="15" value="{{ ad.ad_title }}" type="text" class="validate" required>
                         <label for="ad_title">Title</label>
                     </div>
                 </div>
@@ -41,7 +45,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix teal-text text-darken-4"></i>
                         <textarea id="ad_description" name="ad_description" minlength="5"
-                        maxlength="100" class="materialize-textarea validate" required></textarea>
+                        maxlength="100" class="materialize-textarea validate" required> {{- ad.ad_description -}}</textarea>
                         <label for="ad_description">Description</label>
                     </div>
                 </div>
@@ -49,7 +53,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-tag prefix teal-text text-darken-4"></i>
-                        <input id="price" name="price" type="text" class="validate" required>
+                        <input id="price" name="price" type="text" class="validate" value="{{ ad.price }}" required>
                         <label for="price">Price</label>
                     </div>
                 </div>
@@ -58,9 +62,13 @@
                     <div class="input-field col s12">
                         <i class="fas fa-clipboard prefix teal-text text-darken-4"></i>
                         <select id="condition_type" name="condition_type" class="validate" required>
-                            <option value="" disabled selected>Choose Condition Type</option>
+                            <option value="" disabled>Choose Condition Type</option>
                             {% for condition in conditions %}
-                                <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                                {% if condition.condition_type == ad.condition_type %}
+                                    <option value="{{ condition.condition_type }}" selected>{{ condition.condition_type }}</option>
+                                {% else %}
+                                    <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                         <label for="condition_type">Condition</label>
@@ -71,7 +79,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix teal-text text-darken-4"></i>
                         <input id="location" name="location" minlength="5"
-                        maxlength="30" type="text" class="validate" required>
+                        maxlength="30" value="{{ ad.location }}" type="text" class="validate" required>
                         <label for="location">Location</label>
                     </div>
                 </div>
@@ -79,7 +87,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-phone prefix teal-text text-darken-4"></i>
-                        <input id="telephone" name="telephone" type="tel" maxlength="11" class="validate" required>
+                        <input id="telephone" name="telephone" type="tel" maxlength="11" value="{{ ad.telephone }}" class="validate" required>
                         <label for="telephone">Telephone</label>
                     </div>
                 </div>
@@ -87,7 +95,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-envelope prefix teal-text text-darken-4"></i>
-                        <input id="email" name="email" type="email" class="validate" required>
+                        <input id="email" name="email" type="email" class="validate" value="{{ ad.email }}" required>
                         <label for="email">Email</label>
                     </div>
                 </div>
@@ -97,10 +105,10 @@
                         <div class="switch">
                             <i class="fas fa-shopping-cart prefix teal-text text-darken-4"></i>
                             <label for="is_available">
-                                Sold!
+                                Available
                                 <input type="checkbox" id="is_available" name="is_available">
                                 <span class="lever"></span>
-                                Available
+                                Sold!
                             </label>
                         </div>
                     </div>
@@ -108,6 +116,10 @@
                 <!--submit button-->
                 <div class="row">
                     <div class="col s12 center-align">
+                        <!--cancel button-->
+                        <a href="{{ url_for('get_ads') }}" class="btn-large orange text-shadow">
+                            Cancel <i class="fas fa-times-circle right"></i>
+                        </a>
                         <button type="submit" class="btn-large teal darken-2 text-shadow">
                             Edit Ad <i class="fas fa-pencil-alt right"></i>
                         </button>
