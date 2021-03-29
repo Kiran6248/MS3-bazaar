@@ -126,6 +126,15 @@ def post_ad():
                            conditions=conditions)
 
 
+@app.route("/edit_ad/<ad_id>", methods=["GET", "POST"])
+def edit_ad(ad_id):
+    ad = mongo.db.tasks.find_one({"_id": ObjectId(ad_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    conditions = mongo.db.conditions.find().sort("condition_type", 1)
+    return render_template("edit_ad.html", ad=ad, categories=categories,
+                           conditions=conditions)
+
+
 @app.route("/view_ad")
 def view_ad():
     ads = mongo.db.ads.find()
