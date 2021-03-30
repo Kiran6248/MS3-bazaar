@@ -106,9 +106,13 @@
                             <i class="fas fa-shopping-cart prefix teal-text text-darken-4"></i>
                             <label for="is_available">
                                 Available
-                                <input type="checkbox" id="is_available" name="is_available">
+                                {% if ad.is_available == "on" %}
+                                    <input type="checkbox" id="is_available" name="is_available">
+                                {% else %}
+                                    <input type="checkbox" id="is_available" name="is_available">
+                                {% endif %}
                                 <span class="lever"></span>
-                                Sold!
+                                Sold
                             </label>
                         </div>
                     </div>
