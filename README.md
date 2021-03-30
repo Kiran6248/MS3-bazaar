@@ -175,6 +175,58 @@ Google font **Roboto Slab** with a fallback of **sans serif** is selected for th
 The images used in this project are taken by the developer and are subject of demonstration only.
 ***
 
+## **Features**
+
+### **Features Used**
+
+### **Features to be implemented in future**
+
+***
+## **Technologies used**
+
+### **Languages Used**
+
+### **Frameworks, Libraries & Programs Used**
+
+***
+## **Resources**
+***
+
+## **Testing**
+
+**The detailed testing report can be found here** [Testing](TESTING.md)
+
+***
+## **Deployment**
+
+### **Initial Deployment**
+
+### **How to Fork it**
+
+### **How to Clone it**
+
+### **Making a Local clone**
+
+***
+
+## **Credits**
+
+### **Code**
+
+### **Content**
+
+### **Media**
+
+### **Acknowledgments**
+
+***
+
+
+
+
+
+
+
 
 
 
