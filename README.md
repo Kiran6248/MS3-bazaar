@@ -42,7 +42,9 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 
 * [Technologies used](#technologies-used)
     * [Languages Used](#languages-used)
-    * [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
+    * [Integration](#integration)
+    * [Workspace version control and Repository storage](#workspace-version-control-and-repository-storage) 
+    * [Other](#other)
 
 * [Resources](#resources)
 
@@ -186,7 +188,11 @@ The images used in this project are taken by the developer and are subject of de
 
 ### **Languages Used**
 
-### **Frameworks, Libraries & Programs Used**
+### **Integration**
+
+### **Workspace version control and Repository storage**
+
+### **Other**
 
 ***
 ## **Resources**
