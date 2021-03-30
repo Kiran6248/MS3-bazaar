@@ -78,6 +78,52 @@
 Testing client stories from UX part of [README.md](README.md) 
 
 ***
+## **Manual Testing**
+
+**Manual Testing of all elements and functionality of every page.**
+
+#### **Home Page**
+#### **View Ad Page**
+#### **Post Ad Page**
+#### **Edit Page**
+#### **Delete Modal**
+#### **Profile Page**
+#### **Manage Catagory Page**
+#### **Contact Us Page**
+***
+
+## **Responsiveness**
+
+***
+
+## **Browser Compatibility**
+
+***
+## **Lighthouse**
+
+***
+
+## **Project Barrier**
+
+***
+## **Bug Report**
+#### **Bug Found and Resolved**
+
+1. The Hero image is added through the style sheet because when I was trying to add it through materialize img tag, 
+the page was becoming very difficult to resize. As **img** tag is not there in HTML, I didn't add **alt**, instead I added **title** in the containing **div** after referring 
+from Stack Overflow.
+
+The Stack Overflow source can be verified here.[Stack Overflow](https://stackoverflow.com/questions/4216035/css-background-image-alt-attribute)
+
+2. 
+#### **Open Bug**
+
+
+
+
+
+
+
 
 
 
