@@ -1,6 +1,6 @@
 # Bazaar
-  ### *Buy what you want*.
-  ### *Sell what you don't*
+  ### *Buy what you want, Sell what you don't*.
+  
 ### A Webpage for buying and selling of second hand goods.
 
 [View live site here]()
@@ -8,7 +8,8 @@
 ![image](responsive)
 
 This webpage is developed by me for my Third Milestone Project for Code Institute.
-This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **MongoDB**, and **Flask Framework**.
+This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **MongoDB**, and **Flask Framework**. 
+The purpose of this site is to show CRUD functionality and Database accessibilty.
 ***
 
 ## **Table of Content**
