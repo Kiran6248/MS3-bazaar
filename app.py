@@ -169,6 +169,27 @@ def view_ad(ad_id):
     return render_template("view_ad.html", ad=ad)
 
 
+# @app.route("/profile/<username>/<ad_id>", methods=["GET", "POST"])
+# def profile(username=None, ad_id=None):
+#     # grab the session user's username from the db
+#     username = mongo.db.users.find_one(
+#         {"username": session["user"]})["username"]
+
+#     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+
+#     if session["user"]:
+#         return render_template("profile.html", username=username, ad=ad)
+
+#     return redirect(url_for("login"))
+
+
+# @app.route("/wish/<ad_id>")
+# def wish(ad_id):
+#     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+
+#     return render_template("profile.html", ad=ad)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
