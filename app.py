@@ -202,6 +202,13 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+@app.route("/delete_category/<category_id>")
+def delete_category(category_id):
+    mongo.db.categories.remove({"_id": ObjectId(category_id)})
+    flash("Category Successfully Deleted")
+    return redirect(url_for("get_categories"))
+
+
 # @app.route("/profile/<username>/<ad_id>", methods=["GET", "POST"])
 # def profile(username=None, ad_id=None):
 #     # grab the session user's username from the db
