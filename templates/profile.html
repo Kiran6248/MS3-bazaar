@@ -1,14 +1,80 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!--username display-->
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <div class="card-panel teal lighten-5">
+            <div class=" teal lighten-5">
                <h3 class="center-align teal-text-text-darken-4">
                    {{ username }}'s Profile
                </h3>
             </div>
         </div>
     </div>
+
+    <!--Ad posted header-->
+     <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class=" teal lighten-5">
+               <h5 class="center-align teal-text-text-darken-4">
+                   See all the Ads you have posted below:
+               </h5>
+            </div>
+        </div>
+    </div>
+
+    <!--User Ad Display-->
+    <div class="container">
+        <div class="row center valign">
+            {% for ad in ads if session.user|lower == ad.posted_by|lower %}
+                <div class="col s12 m6 l4">
+                    <div class="card z-depth-3 waves-effect waves-block waves-light teal lighten-5">
+                        <!--ad image-->
+                        <div class="card-image card-image-main">
+                            <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo">
+                        </div>
+                        <div class="card-content-main">
+                            <!--ad title-->
+                            <span class="card-title activator orange-text text-darken-4"> {{ ad.ad_title }}<i
+                                    class="fas fa-ellipsis-v right"></i></span>
+                            <div class="divider"></div>
+                            <!--ad category name-->
+                            <div class="section">
+                                <p><i class="fas fa-folder-open prefix"></i> {{ ad.category_name }}</p>
+                            </div>
+                            <div class="divider"></div>
+                            <!--ad price-->
+                            <div class="section">
+                                <p><i class="fas fa-tag prefix"></i> Price: {{ ad.price }} euro</p>
+                            </div>
+                            <div class="divider"></div>
+                            <!--ad availability-->
+                            <div class="section">
+                                {% if ad.is_available == "on" %}
+                                    <i class="fas fa-shopping-cart tooltipped"
+                                        data-position="right" data-tooltip="Available"></i>
+                                {% else %}
+                                     <i class="fas fa-shopping-cart tooltipped"
+                                        data-position="right" data-tooltip="SOLD!"></i>
+                                {% endif %}
+                                Available/Sold
+                            </div>
+                        </div>
+                        <!--view button-->
+                        <div class="row">
+                           
+                            <div class="col view-button valign s12 center-align">
+                                <a href="{{ url_for('view_ad', ad_id=ad._id) }}" class="btn teal dareken-2 text-shadow">
+                                    View <i class="fas fa-plus-square right"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 
 {% endblock %}
