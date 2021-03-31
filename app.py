@@ -175,6 +175,19 @@ def get_categories():
     return render_template("categories.html", categories=categories)
 
 
+@app.route("/add_category", methods=["GET", "POST"])
+def add_category():
+    if request.method == "POST":
+        category = {
+            "category_name": request.form.get("category_name")
+        }
+        mongo.db.categories.insert_one(category)
+        flash("New Category Added")
+        return redirect(url_for("get_categories"))
+
+    return render_template("add_category.html")
+
+
 # @app.route("/profile/<username>/<ad_id>", methods=["GET", "POST"])
 # def profile(username=None, ad_id=None):
 #     # grab the session user's username from the db
