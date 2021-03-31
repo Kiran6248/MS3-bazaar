@@ -169,6 +169,12 @@ def view_ad(ad_id):
     return render_template("view_ad.html", ad=ad)
 
 
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("categories.html", categories=categories)
+
+
 # @app.route("/profile/<username>/<ad_id>", methods=["GET", "POST"])
 # def profile(username=None, ad_id=None):
 #     # grab the session user's username from the db
