@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="center-align teal-text text-darken-4">Suggetions & Complaints</h3>
+
+    <div class="container">
+        <div class="row">
+            <form class="col s12 m8 offset-m2" method="POST" id="contact-form">
+                <div class="card-panel teal lighten-5">
+                    <!--username-->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-user-cog prefix teal-text text-darken-1"></i>
+                            <input id="username" name="from_name" type="text" minlength="5"
+                                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <!--password-->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-envelope prefix teal-text text-darken-1"></i>
+                            <input id="emailaddress" name="from_email" type="email" class="validate" required>
+                            <label for="emailaddress">Email</label>
+                        </div>
+                    </div>
+                    <!--feedback-->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="fas fa-comment-dots prefix teal-text text-darken-1"></i>
+                            <textarea id="message" name="feedback" minlength="5"
+                                maxlength="15" class="materialize-textarea validate" required>
+                            </textarea>
+                            <label for="message">Feedback</label>
+                        </div>
+                    </div>
+
+                    <!--Cancel/Submit Button-->
+                    <div class="row center-align">
+                        <a href="" aria-label="Cancel" class="btn-small orange darken-2 text-shadow">Cancel</a>
+                        <button type="submit" value="send" aria-label="Submit" class="btn-small teal text-shadow">
+                            Submit 
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %} 
