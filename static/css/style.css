@@ -80,6 +80,15 @@ nav ul li a {
     padding: 0px;
 }
 
+.card-content-main .section p {
+    font-size: 1rem;
+    color: #000;
+}
+
+.card-content-main .section .fas {
+    color: #000;
+}
+
 /*------------------------------------------------hero image*/
 .hero-home {
     background-image: url(https://i.ibb.co/YBYM7rp/pexels-sanketh-rao-716107.jpg);
