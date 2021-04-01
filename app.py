@@ -85,7 +85,7 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    ads = list(mongo.db.ads.find())
+    ads = list(mongo.db.ads.find({"posted_by": username}))
 
     if session["user"]:
         return render_template("profile.html", username=username, ads=ads)
@@ -202,32 +202,12 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+# delete category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Successfully Deleted")
     return redirect(url_for("get_categories"))
-
-
-# @app.route("/profile/<username>/<ad_id>", methods=["GET", "POST"])
-# def profile(username=None, ad_id=None):
-#     # grab the session user's username from the db
-#     username = mongo.db.users.find_one(
-#         {"username": session["user"]})["username"]
-
-#     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
-
-#     if session["user"]:
-#         return render_template("profile.html", username=username, ad=ad)
-
-#     return redirect(url_for("login"))
-
-
-# @app.route("/wish/<ad_id>")
-# def wish(ad_id):
-#     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
-
-#     return render_template("profile.html", ad=ad)
 
 
 if __name__ == "__main__":

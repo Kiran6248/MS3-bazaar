@@ -107,9 +107,9 @@
                             <label for="is_available">
                                 Available
                                 {% if ad.is_available == "on" %}
-                                    <input type="checkbox" id="is_available" name="is_available">
+                                    <input type="checkbox" value="{{ ad.is_available }}" id="is_available" name="is_available">
                                 {% else %}
-                                    <input type="checkbox" id="is_available" name="is_available">
+                                    <input type="checkbox" value="{{ ad.is_available }}" id="is_available" name="is_available">
                                 {% endif %}
                                 <span class="lever"></span>
                                 Sold
