@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" id="contact-form">
+            <form class="col s12 m8 offset-m2" id="contactForm" onsubmit="event.preventDefault(); return sendMail(this);">
                 <div class="card-panel teal lighten-5">
                     <!--username-->
                     <div class="row">
@@ -37,7 +37,7 @@
 
                     <!--Cancel/Submit Button-->
                     <div class="row center-align">
-                        <a href="" aria-label="Cancel" class="btn-small orange darken-2 text-shadow">Cancel</a>
+                        <a href="{{ url_for('get_ads') }}" aria-label="Cancel" class="btn-small orange darken-2 text-shadow">Cancel</a>
                         <button type="submit" value="send" aria-label="Submit" class="btn-small teal text-shadow">
                             Submit 
                         </button>
