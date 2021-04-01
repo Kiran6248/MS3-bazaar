@@ -82,11 +82,11 @@
                 <!--ad availability-->
                 <p>
                     {% if ad.is_available == "on" %}
-                        <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="Available"></i>
-                        <span class="new badge green " data-badge-caption="">Available</span>
+                        <i class="fas fa-shopping-cart tooltipped" data-position="center" data-tooltip="Available">
+                        <span class="new badge green " data-badge-caption="">Available</span></i>
                     {% else %}
-                        <i class="fas fa-shopping-cart tooltipped" data-position="right" data-tooltip="SOLD!"></i>
-                        <span class="new badge red " data-badge-caption="">SOLD</span>
+                        <i class="fas fa-shopping-cart tooltipped" data-position="center" data-tooltip="SOLD!">
+                        <span class="new badge red " data-badge-caption="">SOLD</span></i>
                     {% endif %}
                 </p>
             </div>
