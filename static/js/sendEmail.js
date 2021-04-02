@@ -4,7 +4,7 @@ function sendMail(contactForm){
 "from_name": contactForm.name.value,
 "from_email": contactForm.emailaddress.value,
 "projectsummary": contactForm.projectsummary.value
-})
+  })
         .then(
             function(response) {
                 var sentButton = document.getElementById("contact-button");
