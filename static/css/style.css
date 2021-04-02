@@ -52,14 +52,20 @@ nav ul li a {
 
 .welcome {
    padding-top: 5px;
+   background-color: rgb(0, 128, 128, 0.7);
+   margin-top: 100px;
+   padding-bottom: 5px;
+
 }
 
 .welcome p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .card-content p {
     font-family: "Roboto Slab", sans-serif !important;
+
 }
 
 .card .card-image-main img {

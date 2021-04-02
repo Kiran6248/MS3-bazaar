@@ -10,10 +10,10 @@ function sendMail(contactForm){
                 var sentButton = document.getElementById("contact-button");
                 sentButton.style.backgroundColor = "Green";
                 sentButton.innerHTML = "Feedback Sent!";
-                alert("Your feedback is submitted");
+                alert("Your feedback is submitted", response);
                 },
                 function(error) {
-               alert("try again");
+               alert("try again", error);
             });
        // Clear form after submission
             document.getElementById("contactForm").reset();
