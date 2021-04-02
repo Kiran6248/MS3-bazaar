@@ -3,9 +3,9 @@
   
 ### A Webpage for buying and selling of second hand goods.
 
-[View live site here]()
+[View live site here](https://ms3-bazaar.herokuapp.com/get_ads)
 
-![image](responsive)
+![image](static/images/responsive.JPG)
 
 This webpage is developed by me for my Third Milestone Project for Code Institute.
 This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **MongoDB**, and **Flask Framework**. 
