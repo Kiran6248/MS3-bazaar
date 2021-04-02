@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="row center">
+        <!--image-->
+        <div class="col s6 offset-s3 l4 offset-l4">
+            <div class="error-image-container">
+                <img src="{{ url_for('static', filename='images/404.png') }}" alt="A man looking at 404"
+                    class="responsive-img error-img">
+            </div>
+        </div>
+
+        <!--content-->
+        <div class="col s12">
+            <div class="error-container">
+                <div class="error-heading">
+                    <h2 class="section-heading">Hmm.. Looks like you've gone off the beaten path.</h2>
+                </div>
+                <div class="error-message flow-text">
+                    <p>Get back to the <a href="{{ url_for('get_ads') }}">Ads!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
