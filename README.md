@@ -243,6 +243,70 @@ by adding one code in the CSS Style sheet.
  For example- Usename and Password should be 5-15 characters alphanumeric word with no spaces.
 * There is one **Login** button which directs the User to **Profile** page after login.
 * For new users, One link is given to direct them to the Register page.
+* One flash message saying "Username or Password is Incorrect" will show if the Username or Password is Incorrect.
+
+**Register Page**
+
+* The Register page will have a form to enter Username and Password. This will also have some input conditions, same as the Login Form.
+* Submit button is there, which will take the user to Profile page with a message of "Registration Successful" and a message which tells that user has not 
+ posted anything yet.
+* For returning Users, One Login link is given below the form.
+
+**Contact Us Page**
+
+* One contact form is given which is visible to every users, even if user has not registered with the site. 
+* It is addressed as **Suggestions and Complaints** , So that user user will feel free to give any suggestions and complaints if they have any.
+* It has **Full name**, **Email**, and one **Feedback** section. 
+* Feedback section is a Textarea.
+* One **Cancel** and one **Submit** button are given. The Submit button's text will change to **Feedback Sent** after successfully sending the feedback. 
+  One message will also pop up stating that **Your Feedback is submitted** or **Try Again** if it fails.
+* This contact form code is referred from my second Milestone project with some changes in the email template.
+
+**Profile Page**
+
+* The profile page is the first page the user see after logging in or Registering for the first time.
+* This page has One Welcome note with current user name.
+* This page will show all the Ads posted by the user. If the User has not posted anything then 
+  it will show a link to Post Ad page, Where User can post it's ads.
+
+**Post Ad Page**
+
+* Ths Post ad is a form with many different types of inputs. The input fields are-
+  1. Category (Dropdown)
+  2. Photo URL
+  3. Ad Title
+  4. Ad Description (textarea)
+  5. Price
+  6. Condition(Dropdown)
+  7. Location
+  8. Telephone
+  9. Email
+  10. Availability(Switch)
+* This form has one button to Post the Ad.
+* Once the Ad is posted the user is directed to the Home Page.
+* The Categories included are 
+  1. Antique
+  2. Art
+  3. Books
+  4. Electronic
+  5. Fashion
+  6. Games
+  7. Household
+  8. Jewellery
+  9. Shoes
+    These categories can be added or removed by the Admin.
+* The Condition Field have 3 types of conditions, from which the user can select one.
+  1. New
+  2. Good as New
+  3. Used
+* The availability switch have 2 conditions **Available** and **Sold**.
+* Each input section is compulsory and is validated by adding one Materialize code in Script page. This code is provided by Code Institute.
+
+
+
+
+
+
 
 
 
