@@ -200,7 +200,7 @@ The Hero Image is taken from Pexel.com. It is a market image of Dubai, clicked b
 
 **Footer**
 
-* The Footer is situated at the bottom of every page. Whish is having Copyright information and social media links.
+* The Footer is situated at the bottom of every page. Which is having Copyright information and My Github and Linkedin account links.
 * [MaterializeCSS](https://materializecss.com/footer.html) is used to make the footer syckey at the bottom of every page, 
 by adding one code in the CSS Style sheet.
 * The code added to style sheet is this.
@@ -273,7 +273,7 @@ by adding one code in the CSS Style sheet.
 
 * Ths Post ad is a form with many different types of inputs. The input fields are-
   1. Category (Dropdown)
-  2. Photo URL
+  2. Photo URL ( in https form)
   3. Ad Title
   4. Ad Description (textarea)
   5. Price
@@ -302,21 +302,49 @@ by adding one code in the CSS Style sheet.
 * The availability switch have 2 conditions **Available** and **Sold**.
 * Each input section is compulsory and is validated by adding one Materialize code in Script page. This code is provided by Code Institute.
 
+**Edit Ad Page**
 
+* This page looks same as Post Ad page.
+* This page is directed from the View Ad page, where a button is given to Edit the post. 
+  That button is only visible to the owner of the post and Admin of the site.
+* When the Ad owner clicks the edit button, all the fields populate with already filled data, which makes it easier to make the changes.
+* 2 buttons are given in the bottom of the form. One to Edit the changes and One to Cancel any changes. 
+* The **Edit Ad Button** will remain on the page with a flash message of " Ad Successfully Updated".
+* The **Cancel button** will bring the User to the Home page.
 
+**Delete Ad**
 
+* The Delete Ad feature is given to every ad with a button on the view Ad page, Which is visible to only the Owner of the post and the Admin of the site.
+* When the Delete button is clicked One modal pops up, with a message of **Confirm Deletion**, which has 2 buttons, 
+  The **Cancel** button cancels the modal and user remains on the same page. The **Delete** button deletes the ad and takes the user to the **Home Page**.
 
+**Manage Categories**
 
+* This section is visible only to the Admin. After logging in Admin can see this link in the Navbar. 
+* This page will have one **Add Category** button on the top of the page.
+* All the categories are shown there with one Edit and one Delete button with every category.
+* The edit button will take the admin to the Edit Category page.
+* The Delete button will popup one modal with **Confirm Deletion** message.  which has 2 buttons, 
+  The **Cancel** button cancels the modal and Admin remains on the same page. 
+  The **Delete** button deletes the Category the Admin remains on the **Manage Category** page.
 
+**Delete Modal**
 
+* The Delete funtion of the site has given a defensive programming by adding one Modal from MaterializeCSS. 
+* The modal asks about the confirmation and works accordingly.
+* This Modal is referred from [MaterializeCSS.com](https://materializecss.com/modals.html)
 
+**Logout**
 
+* The **Logout** link is given in the Navbar and visible only after the user is logged in.
+* When clicking on the Logout link, The user is logged out from the session and directed back to LogIn page.
 
+**Error Handler**
 
-
-
-
-
+* Two Error Handlers are provided for the better performance of the site, if something wrong happens.
+* One is 404 error handler and another is 500 Internal error handler.
+* This pages have one image of a man looking at the 404 written and looks confused.
+* The text tells them to click on the **Ads** word, which directs the user to the **Home page**.
 
 
 ### **Features to be implemented in future**
