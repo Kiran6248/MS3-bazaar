@@ -187,7 +187,72 @@ The Hero Image is taken from Pexel.com. It is a market image of Dubai, clicked b
 
 ### **Features Used**
 
+#### *Elements on every page*
+
 **Navigation Bar**
+
+* [MaterializeCSS](https://materializecss.com/navbar.html) is referred for making the Navigation Bar.
+* Navigatin Bar is situated on the top of the page with the **Bazaar** logo on left and menu on right.
+* The menu is collapsible in mobile view and opens in sidebar, in mobile view the logo is situated in the middle of the Navbar. 
+* The Navbar menu have **Home**, **Login**, **Register** and **Contact Us** link for every visitor who visites the site.
+* The Navbar menu will change to **Home**, **Profile**, **Post Ad**, **Logout** and **Contact us** after the visitor logged in.
+* The **Manage categories** link is visible only to Admin of the site.
+
+**Footer**
+
+* The Footer is situated at the bottom of every page. Whish is having Copyright information and social media links.
+* [MaterializeCSS](https://materializecss.com/footer.html) is used to make the footer syckey at the bottom of every page, 
+by adding one code in the CSS Style sheet.
+* The code added to style sheet is this.
+
+   ![image](static/images/footer.JPG)
+
+#### *Elements on different pages*
+
+**Home Page**
+
+* One Hero Image is there on the Home page, which is very colourful image of a marketplace in Dubai. It is taken from 
+  [Pexel.com](https://www.pexels.com/photo/assorted-commemorative-plates-716107/)
+* A welcome note is situated on the Hero Image to give the introduction about the site and its purpose.
+* A search Bar is given to search for ads through their keywords.
+* Ad image cards are there as 3 in a row, Which shows image of the Ad and details about its name and vailability. 
+ It is reponsive and changes to 2 in a row for medium size screen and 1 in a row for Small size(mobile) screen.
+* The card image will open a new page when clicked on it, that page will have details for individual Ads.
+
+**View Ad Page**
+
+* This page opens after clicking on the Ad card in **Home** page.
+* This page have a full size image of the Ad and Deatail of it. The details shown are 
+  1. Ad Title
+  2. Category
+  3. Ad Description
+  4. Price
+  5. Condition (New, Good as New or Used)
+  6. Location
+  7. Posted by
+  8. Email
+  9. Telephone
+  10. Availability (Available or Sold)
+* The availabity is shown by a **tooltip and one **badge** also, which is *Green* in colour for available ads and *Red* for sold.
+* There is a **Back** button on top of the page which takes back to the **Home** page.
+* One **Edit** and One **Delete** button is also there on the top of the page, which is visible only to the owner of the Ad(Posted by) and to the Admin of the site.
+
+**Login Page**
+
+* The **Login** page has a form input for **Username** and **Password**. The input section will become Red if the certain input conditions are not fulfilled.
+ For example- Usename and Password should be 5-15 characters alphanumeric word with no spaces.
+* There is one **Login** button which directs the User to **Profile** page after login.
+* For new users, One link is given to direct them to the Register page.
+
+
+
+
+
+
+
+
+
+
 
 
 ### **Features to be implemented in future**
