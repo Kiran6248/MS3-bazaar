@@ -42,9 +42,10 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 
 * [Technologies used](#technologies-used)
     * [Languages Used](#languages-used)
-    * [Integration](#integration)
-    * [Workspace version control and Repository storage](#workspace-version-control-and-repository-storage) 
-    * [Other](#other)
+    * [Frameworks](#frameworks)
+    * [Extensions and Kits](#extensions-and-kits) 
+    * [Project Management](#project-management)
+    * [Tools](#tools)
 
 * [Resources](#resources)
 
@@ -175,7 +176,43 @@ and orange(#ff9800) and their shades are used according to the page requirement.
 
 ![image](static/images/colour1.jpg)
 
+**Core**
+
+Two shades of Materialize Teal is used as the core element of the page, namely the Nvabar, Footer and Card color.
+
+*  ![#009688](https://via.placeholder.com/15/009688/000000?text=+) `#009688`(teal)
+*  ![#00695c](https://via.placeholder.com/15/00695c/000000?text=+) `#00695c`(teal darken-3)
+
+
+**Cards and Forms**
+
+Lighter shade of teal is used as the background colour of the form and the cards.
+
+*  ![#00695c](https://via.placeholder.com/15/e0f2f1/000000?text=+) `#e0f2f1`(teal lighten-5)
+
+**Buttons**
+
+It is important for the buttons to have consistent colour with the intuitive suggestions about their functions. 
+Teal is used for **Login**, **Register**, Contact form **submit**, **Post ad**, **Edit Ad**,
+**Add categories**, and **Edit category**.
+
+Orange is used for the **Delete** , modal delete confirmation, **Delete** and Contact form **Cancel** button
+
+*  ![#009688](https://via.placeholder.com/15/009688/000000?text=+) `#009688`(teal)
+*  ![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+) `#ff9800`(orange)
+
+**Badges**
+
+Red is used for the Sold items and Green is used for the Available items.
+
+*  ![#f44336](https://via.placeholder.com/15/f44336/000000?text=+) `#f44336`(red)
+*  ![#4CAF50](https://via.placeholder.com/15/4CAF50/000000?text=+) `#4CAF50`(green)
+
+
 #### **Typography**
+
+[Roboto Slab](https://fonts.google.com/?query=roboto+slab)
+
 Google font **Roboto Slab** with a fallback of **sans serif** is selected for the entire project.
 
 #### **Images**
@@ -346,19 +383,114 @@ by adding one code in the CSS Style sheet.
 * This pages have one image of a man looking at the 404 written and looks confused.
 * The text tells them to click on the **Ads** word, which directs the user to the **Home page**.
 
+**Secure Password**
+
+* When registering to the site, the User's password is hashed so that it is not revealed to the database owner.
+
 
 ### **Features to be implemented in future**
+
+* One wishlist will be added with every Ad posted. By clicking on that ad the User can save that ad in his/her Bucket.
+* Money transaction can also be implemented in the app only.
 
 ***
 ## **Technologies used**
 
 ### **Languages Used**
 
-### **Integration**
+ * [HTML](https://en.wikipedia.org/wiki/HTML)
 
-### **Workspace version control and Repository storage**
+    HTML is the main language used to write code for this project.
+ * [CSS](https://en.wikipedia.org/wiki/CSS)
 
-### **Other**
+   CSS is used to write code for designing and beautifying the site.
+ * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+   Javascript is used to add functionality and make the site more interactive.
+ * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+    Python is used for the Backend Programming.
+   * [jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine))
+      
+      Jinja is used as the template engine for Python.
+
+### **Frameworks**
+
+  * [Flask](https://palletsprojects.com/p/flask/)
+
+     Flask is used as the main framework for the Python.
+  * [jQuery](https://jquery.com/)
+
+     jQuery was used for the interactive features.
+  * [Materialize](https://materializecss.com/)
+
+     Materialize was used to assist with the responsiveness and styling of the website, respectively the navbar, footer, cards, card-panels, buttons, modals.
+### **Extensions and Kits**
+
+  * [Werkzeug](https://palletsprojects.com/p/werkzeug/)
+
+    It is used as a web application library.
+
+### **Project Management**
+
+ * [Balsamiq](https://balsamiq.com/wireframes/)
+
+   Balsamiq is used to make wireframes for this project in the skeleton stage.
+ * [GitHub](https://github.com/)
+
+    Github is used to make **Repositories** and for **Version Control**.
+ * [GitPod](https://gitpod.io/workspaces/)
+
+    Gitpod is the main cloud-based editor for this project. Workspaces are made using the green Gitpod button in Github.
+ * [Heroku](https://www.heroku.com/about)
+
+    Heroku was used for deploying the app.
+ * [MongoDB](https://www.mongodb.com/)
+
+    MongoDB was used for creating the database collections.
+
+### **Tools**
+
+ * [Am I Responsive?](http://ami.responsivedesign.is/)
+
+   Am I Responsive site is used to take a mockup screenshot of the project, which is attached at the beginning of this document.
+ * [Autoprefixer](https://autoprefixer.github.io/)
+
+   AutoPrefixer is used to make the site compatible with all browsers.
+ * [iColorpalette](https://icolorpalette.com/)
+
+    Find a relevant color palette for the site.
+ * [Favicon.io](https://favicon.io//)
+
+   favicon.io is used to import the icon for the website favicon.
+ * [Google Fonts](https://fonts.google.com/)
+
+    Google fonts were used to import the 'Roboto Slab' font into the style.css file which is used on all text throughout the website.
+ * [W3C Validator](https://validator.w3.org/)
+
+    W3C validator is used for testing HTML and CSS for the site.
+* [JSHint](https://jshint.com/)  
+
+  JSHint is used for testing javascript code for the site.
+* [PEP8 online](http://pep8online.com/)
+
+  PEP8online is used for testing Python codes.
+* [Online Spelling Check](https://www.grammarly.com/)
+
+   Grammarly is used to check spelling and grammatical errors.
+* [Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome)
+
+  Font awesome is used to import Twitter, and Linkedin font awesome icons to beautify the footer, and icons for every input field in the Ad card.
+* [Randomkeygen](https://randomkeygen.com/)
+
+  Randomkeygen was used for generating Fort Knox password.
+* [EmailJS](https://www.emailjs.com/)
+
+  EmailJS was used to connect the contact form to the email address.
+* [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool)
+
+  Snipping Tool was used to take screenshots of the images and codes.
+
 
 ***
 ## **Resources**
