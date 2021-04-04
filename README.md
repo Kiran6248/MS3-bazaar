@@ -491,9 +491,18 @@ by adding one code in the CSS Style sheet.
 
   Snipping Tool was used to take screenshots of the images and codes.
 
-
 ***
 ## **Resources**
+
+ * [Code Institute Course Content](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/)- Main source of fundamental knowledge.
+
+ * Code institute **Slack Community**- Main source of assistance.
+
+ * [Stack Overflow](https://stackoverflow.com/)- General Resources.
+
+ * [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+
+ * [MonoDB Documentation](https://docs.mongodb.com/)
 ***
 
 ## **Testing**
