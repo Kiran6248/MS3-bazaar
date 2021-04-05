@@ -18,17 +18,22 @@
 * [Client Stories Testing](#client-stories-testing)
 
 * [Manual Testing](#manual-testing)
-    
-    * [Home Page](#home-page)
-    * [View Ad Page](#view-ad-page)
-    * [Post Ad Page](#post-ad-page)
-    * [Edit Page](#edit-page)
-    * [Delete Modal](#delete-modal)
-    * [Profile Page](#profile-page)
-    * [Manage Catagory Page](#manage-catagory-page)
-    * [Contact Us Page](#contact-us-page)
-    * [Login Page](#login-page)
-    * [Register Page](#register-page)
+
+    * [Elements on every page](#elements-on-every-page)
+       * [Navigation Bar](#navigation-bar)
+       * [Footer](#footer)
+       * [Flashed messages](#flashed-messages)
+    * [Elements on separate page](#elements-on-separate-page)
+       * [Home Page](#home-page)
+       * [View Ad Page](#view-ad-page)
+       * [Post Ad Page](#post-ad-page)
+       * [Edit Page](#edit-page)
+       * [Delete Modal](#delete-modal)
+       * [Profile Page](#profile-page)
+       * [Manage Catagory Page](#manage-catagory-page)
+       * [Contact Us Page](#contact-us-page)
+       * [Login Page](#login-page)
+       * [Register Page](#register-page)
 
 * [Responsiveness](#responsiveness)
 
@@ -143,7 +148,57 @@ Testing client stories from UX part of [README.md](README.md)
 
 **Manual Testing of all elements and functionality of every page.**
 
+### **Elements on every page**
+#### **Navigation Bar**
+
+1. Check if the **navigation bar** has Brand Name and Menu.
+2. Click the Brand name, check if the **Home** page opens.
+3. Click the **Home** link, check if the page stays on the home page.
+4. Click the **Login** link, check if the Login page opens.
+5. Click the **Register** link, check if the Register page opens.
+6. Click the **Contact us** link, check if the Contact Us page opens.
+7. Log in to the site, Check If **Profile**, **Post Ad**, and **Logout** link is visible.
+8. Click the **Profile** link, check if the Profile page opens.
+9. Click the **Post Ad** link, check if the Post Ad page opens.
+10. Click the **Logout** link, check if the user logs out.
+11. Log in from the Admin's account, Check if **Manage Categories** link is visible.
+12. Click the **Manage categories** link, check if the Manage Categories page opens.
+13. Check for **Responsiveness** in mobile view, the navigation bar collapsed in the hamburger icon.
+14. Check in the mobile view if menu is opening in sidebar. 
+15. Repeat steps from 2 to 12 in mobile view.
+
+#### **Footer**
+
+1. Check the **Footer** is always fixed at the bottom of the page.
+2. Click the **Github** link, check if it opens my Github page on a different page.
+3. Click the **Linkedin** link, check if it opens the Linkedin login page.
+4. Check the copyright Date.
+5. Go to the mobile view and check for **responsiveness**.
+6. Repeat steps 1 to 4 in the mobile view.
+
+#### **Flashed Messages**
+
+1. Register with a new account and check if flash message **"Registration Successful"** appears.
+2. Log in to the site and check if the flash message **"username's profile"** appears.
+3. Log in with incorrect account and check if flash message **"Incorrect Username or Password"** appears.
+4. Logout from the session and check if flash message **"You have been Logged Out"** appears.
+5. Post some Ad and check the flash message **"Ad successfully posted"** appears.
+6. Edit some post and check for flash message **"Ad Successfully Updated"** appearance.
+7. delete some post and check if flash message **"Ad successfully deleted"**  appears.
+8. log in from Admin account and add some category, check if flash message **" New category Added"** appears.
+9. Edit some category and check if flash message **"Category successfully updated"** appears.
+10. Delete some category and check if Flash message **"Category successfully deleted"** appears.
+11. Send some feedback through Contact form and see if flash message **"Your message has been sent"** appears.
+
+### **Elements on separate page**
+
 #### **Home Page**
+
+
+
+
+
+
 #### **View Ad Page**
 #### **Post Ad Page**
 #### **Edit Page**

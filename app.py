@@ -165,7 +165,7 @@ def edit_ad(ad_id):
 @app.route("/delete_ad/<ad_id>")
 def delete_ad(ad_id):
     mongo.db.ads.remove({"_id": ObjectId(ad_id)})
-    flash("Task Successfully Deleted")
+    flash("Ad Successfully Deleted")
     return redirect(url_for("get_ads"))
 
 
