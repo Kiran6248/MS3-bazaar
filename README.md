@@ -397,109 +397,55 @@ by adding one code in the CSS Style sheet.
 
 ### **Languages Used**
 
- * [HTML](https://en.wikipedia.org/wiki/HTML)
-
-    HTML is the main language used to write code for this project.
- * [CSS](https://en.wikipedia.org/wiki/CSS)
-
-   CSS is used to write code for designing and beautifying the site.
- * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-
-   Javascript is used to add functionality and make the site more interactive.
- * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-
-    Python is used for the Backend Programming.
-   * [jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine))
-      
-      Jinja is used as the template engine for Python.
+ * [HTML](https://en.wikipedia.org/wiki/HTML) is the main language used to write code for this project.
+ * [CSS](https://en.wikipedia.org/wiki/CSS) is used to write code for designing and beautifying the site.
+ * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is used to add functionality and make the site more interactive.
+ * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is used for the Backend Programming.
+   * [jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine)) is used as the template engine for Python.
 
 ### **Frameworks**
 
-  * [Flask](https://palletsprojects.com/p/flask/)
-
-     Flask is used as the main framework for the Python.
-  * [jQuery](https://jquery.com/)
-
-     jQuery was used for the interactive features.
-  * [Materialize](https://materializecss.com/)
-
-     Materialize was used to assist with the responsiveness and styling of the website, respectively the navbar, footer, cards, card-panels, buttons, modals.
+  * [Flask](https://palletsprojects.com/p/flask/) is used as the main framework for the Python.
+  * [jQuery](https://jquery.com/) was used for the interactive features.
+  * [Materialize](https://materializecss.com/) was used to assist with the responsiveness and styling of the website, respectively the navbar, footer, cards, card-panels, buttons, modals.
 ### **Extensions and Kits**
 
-  * [Werkzeug](https://palletsprojects.com/p/werkzeug/)
-
-    It is used as a web application library.
+  * [Werkzeug](https://palletsprojects.com/p/werkzeug/) is used as a web application library.
 
 ### **Project Management**
 
- * [Balsamiq](https://balsamiq.com/wireframes/)
-
-   Balsamiq is used to make wireframes for this project in the skeleton stage.
- * [GitHub](https://github.com/)
-
-    Github is used to make **Repositories** and for **Version Control**.
- * [GitPod](https://gitpod.io/workspaces/)
-
-    Gitpod is the main cloud-based editor for this project. Workspaces are made using the green Gitpod button in Github.
- * [Heroku](https://www.heroku.com/about)
-
-    Heroku was used for deploying the app.
- * [MongoDB](https://www.mongodb.com/)
-
-    MongoDB was used for creating the database collections.
+ * [Balsamiq](https://balsamiq.com/wireframes/) is used to make wireframes for this project in the skeleton stage.
+ * [GitHub](https://github.com/) is used to make **Repositories** and for **Version Control**.
+ * [GitPod](https://gitpod.io/workspaces/) is the main cloud-based editor for this project. Workspaces are made using the green Gitpod button in Github.
+ * [Heroku](https://www.heroku.com/about) was used for deploying the app.
+ * [MongoDB](https://www.mongodb.com/) was used for creating the database collections.
 
 ### **Tools**
 
- * [Am I Responsive?](http://ami.responsivedesign.is/)
-
-   Am I Responsive site is used to take a mockup screenshot of the project, which is attached at the beginning of this document.
- * [Autoprefixer](https://autoprefixer.github.io/)
-
-   AutoPrefixer is used to make the site compatible with all browsers.
- * [iColorpalette](https://icolorpalette.com/)
-
-    Find a relevant color palette for the site.
- * [Favicon.io](https://favicon.io//)
-
-   favicon.io is used to import the icon for the website favicon.
- * [Google Fonts](https://fonts.google.com/)
-
-    Google fonts were used to import the 'Roboto Slab' font into the style.css file which is used on all text throughout the website.
- * [W3C Validator](https://validator.w3.org/)
-
-    W3C validator is used for testing HTML and CSS for the site.
-* [JSHint](https://jshint.com/)  
-
-  JSHint is used for testing javascript code for the site.
-* [PEP8 online](http://pep8online.com/)
-
-  PEP8online is used for testing Python codes.
-* [Online Spelling Check](https://www.grammarly.com/)
-
-   Grammarly is used to check spelling and grammatical errors.
-* [Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome)
-
-  Font awesome is used to import Twitter, and Linkedin font awesome icons to beautify the footer, and icons for every input field in the Ad card.
-* [Randomkeygen](https://randomkeygen.com/)
-
-  Randomkeygen was used for generating Fort Knox password.
-* [EmailJS](https://www.emailjs.com/)
-
-  EmailJS was used to connect the contact form to the email address.
-* [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool)
-
-  Snipping Tool was used to take screenshots of the images and codes.
-* [ImgBB](https://imgbb.com/)
-
-  ImgBB is used to store my images.
-
-
+ * [Am I Responsive?](http://ami.responsivedesign.is/) is used to take a mockup screenshot of the project, which is attached at the beginning of this document.
+ * [Autoprefixer](https://autoprefixer.github.io/) is used to make the site compatible with all browsers.
+ * [iColorpalette](https://icolorpalette.com/) is used to find a relevant color palette for the site.
+ * [Favicon.io](https://favicon.io//) is used to import the icon for the website favicon.
+ * [Google Fonts](https://fonts.google.com/) was used to import the 'Roboto Slab' font into the style.css file which is used on all text throughout the website.
+ * [W3C Validator](https://validator.w3.org/) is used for testing HTML and CSS for the site.
+* [JSHint](https://jshint.com/) is used for testing javascript code for the site.
+* [PEP8 online](http://pep8online.com/) is used for testing Python codes.
+* [Online Spelling Check](https://www.grammarly.com/), Grammarly is used to check spelling and grammatical errors.
+* [Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome) is used to import Twitter, and Linkedin font awesome icons to beautify the footer, and icons for every input field in the Ad card.
+* [Randomkeygen](https://randomkeygen.com/) is used for generating Fort Knox password.
+* [EmailJS](https://www.emailjs.com/) is used to connect the contact form to the email address.
+* [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool) was used to take screenshots of the images and codes.
+* [ImgBB](https://imgbb.com/) is used to store my images.
 ***
+
+
 ## **Resources**
 
  * [Code Institute Course Content](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/)- Main source of fundamental knowledge.
 
  * Code institute **Slack Community**- Main source of assistance.
+
+ * Code institute **Tutor Support**.
 
  * [Stack Overflow](https://stackoverflow.com/)- General Resources.
 
@@ -519,17 +465,82 @@ by adding one code in the CSS Style sheet.
 
 ### **Prerequisites**
 
-   [Python 3](https://www.python.org/downloads/) - core code
-   [PIP](https://pypi.org/project/pip/) - package installation
-   [Git](https://git-scm.com/) - version control
-   [Mongo DB](https://www.mongodb.com/)
+[Python 3](https://www.python.org/downloads/) - core code
 
+[PIP](https://pypi.org/project/pip/) - package installation
+
+[Git](https://git-scm.com/) - version control
+
+[Mongo DB](https://www.mongodb.com/)
+
+* MongoDB is the database used by the app tp store content uploaded by its users.
+* The following collection should be created:
+
+    * ads
+
+    * categories
+        
+    * users
    
-
 ### **How to clone Bazaar**
+
+To clone this project from its [GitHub repository](https://github.com/Kiran6248/MS3-bazaar):
+
+ 1. From the repository, click **Code**.
+ 2. In the **Clone >> HTTPS** section, copy the clone URL for the repository.
+ 3. In your local IDE open Git Bash.
+ 4. Change the current working directory to the location where you want the cloned directory to be made.
+ 5. Type `git clone`, and then paste the URL you copied in step 2.
+    
+        git clone https://github.com/Kiran6248/MS3-bazaar.git
+6. Press Enter, Your local clone will be created.
+7. Create a file called env.py to hold your app's environment variables, which should contain the following:
+
+        import os 
+
+        os.environ.setdefault("IP", "0.0.0.0")
+        os.environ.setdefault("PORT", "5000")
+        os.environ.setdefault("SECRET_KEY", "<app secret key>")
+        os.environ.setdefault("MONGO_URI", ""mongodb+srv://<username>:<password>@<cluster_name>-ofgqg.mongodb.net/<database_name>?retryWrites=true&w=majority")
+        os.environ.setdefault("MONGO_DBNAME", "<database name>")
+
+8. **Make sure thet env.py is listed in your .gitignore file to prevent your environment variable being pushed publicly**.
+9. The app can be run locally using 
+
+        python3 app.py
+
 
 ### **How to deploy to Heroku**
 
+To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kiran6248/MS3-bazaar): the following steps were taken:
+
+  1. From the GitPod terminal, create **requirements.txt** and **Procfile** using these commands:
+
+            pip3 freeze --local > requirements.txt
+            echo web:python app.py > Procfile
+
+   2. **Push** these files to GitHub
+   3. Log In to [Heroku](https://id.heroku.com/login)
+   4. Select **Create new app** from the dropdown in the Heroku dashboard
+   5. Choose a unique name('ms3-bazaar') for the app and the location nearest to you.
+   6. Go to the **Deploy** tab and under **Deployment method** choose GitHub.
+   7. In the **Connect to Github** enter your GitHub repository details and once found, click **Connect**
+   8. Go to the **Settings** tab and under **Config Vars** choose **Reveal Config Vars**
+   9. Enter the following keys and values, which must match those in the env.py file created earlier:
+
+   
+| Key           | Value                                                                                                   |
+| ------------- |:-------------------------------------------------------------------------------------------------------:| 
+| IP            | 0.0.0.0                                                                                                 | 
+| PORT          | 5000                                                                                                    |   
+| SECRET_KEY    | app secret key                                                                                        | 
+| MONGO_URI     | mongodb+srv://<username>:@<cluster_name>- ofgqg.mongodb.net/<database_name>?retryWrites=true&w=majority |
+| MONGO_DBNAME  | database name                                                                                         |
+     
+
+   10. Go back to the **Deploy** tab and under **Automatic deploys** choose **Enable Automatic Deploys**
+   11. Under **Manual deploy**, select **master** and click **Deploy Branch**
+   12. Once the app has finished building, click **Open app** from the header row of the dashboard.
 
 ***
 
