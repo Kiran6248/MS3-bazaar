@@ -58,7 +58,6 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 
 * [Credits](#credits)
     * [Code](#code)
-    * [Content](#content)
     * [Media](#media)
     * [Acknowledgments](#acknowledgments)
 ***
@@ -428,14 +427,14 @@ by adding one code in the CSS Style sheet.
  * [Favicon.io](https://favicon.io//) is used to import the icon for the website favicon.
  * [Google Fonts](https://fonts.google.com/) was used to import the 'Roboto Slab' font into the style.css file which is used on all text throughout the website.
  * [W3C Validator](https://validator.w3.org/) is used for testing HTML and CSS for the site.
-* [JSHint](https://jshint.com/) is used for testing javascript code for the site.
-* [PEP8 online](http://pep8online.com/) is used for testing Python codes.
-* [Online Spelling Check](https://www.grammarly.com/), Grammarly is used to check spelling and grammatical errors.
-* [Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome) is used to import Twitter, and Linkedin font awesome icons to beautify the footer, and icons for every input field in the Ad card.
-* [Randomkeygen](https://randomkeygen.com/) is used for generating Fort Knox password.
-* [EmailJS](https://www.emailjs.com/) is used to connect the contact form to the email address.
-* [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool) was used to take screenshots of the images and codes.
-* [ImgBB](https://imgbb.com/) is used to store my images.
+ * [JSHint](https://jshint.com/) is used for testing javascript code for the site.
+ * [PEP8 online](http://pep8online.com/) is used for testing Python codes.
+ * [Online Spelling Check](https://www.grammarly.com/), Grammarly is used to check spelling and grammatical errors.
+ * [Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome) is used to import Twitter, and Linkedin font awesome icons to beautify the footer, and icons for every input field in the Ad card.
+ * [Randomkeygen](https://randomkeygen.com/) is used for generating Fort Knox password.
+ * [EmailJS](https://www.emailjs.com/) is used to connect the contact form to the email address.
+ * [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool) was used to take screenshots of the images and codes.
+ * [ImgBB](https://imgbb.com/) is used to store my images.
 ***
 
 
@@ -542,17 +541,41 @@ To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kira
    11. Under **Manual deploy**, select **master** and click **Deploy Branch**
    12. Once the app has finished building, click **Open app** from the header row of the dashboard.
 
+ 
 ***
 
 ## **Credits**
 
 ### **Code**
 
-### **Content**
+* Code Institute Task Manager Project [Mini project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/)
+
+* For 404.html and 500.html implementation, the code was referred from the [Flask Documentation Site](https://flask.palletsprojects.com/en/master/errorhandling/)
+
+* The Navbar, Footer, Cards, Search bar, Forms, and Modal codes were referred from [MaterializeCSS](https://materializecss.com/)
+
 
 ### **Media**
 
+* the images and Ads used in the project are my personal things and all the images are clicked by me.
+
+* The Hero-image is taken from [Pexel.com](https://www.pexels.com/photo/assorted-commemorative-plates-716107/)
+
+* The 404.html and 500.html image is taken from [PNGTree.com](https://pngtree.com/freepng/404-error-page_2596665.html)
+
+### **Student projects**
+
+* [Self Isolution](https://github.com/Edb83/self-isolution#top)
+
+* [Second Chance Web](https://github.com/mihaelasandrea/second-chance-web)
+
 ### **Acknowledgments**
+
+ * Can Sucullu (Code Institute Mentor) - for his support and invaluable suggestions.
+
+ * Miklos (Code Institute Tutor)- For helping me in finding out the error in View Ad page.
+
+ * My Friends and Family for helping me in User testing of the site.
 
 ***
 
