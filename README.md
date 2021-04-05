@@ -59,6 +59,7 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 * [Credits](#credits)
     * [Code](#code)
     * [Media](#media)
+    * [Student projects](#student-projects)
     * [Acknowledgments](#acknowledgments)
 ***
 
@@ -107,10 +108,10 @@ This site is made by using my new learned skill of Backend Development with the 
 7. As a visitor, I want to know if the product is available or not, before clicking and viewing full details.
 8. As a returning visitor, I want to login easily and make some changes in my product. i.e. price.
 9. As a returning visitor, I want to login easily and remove my product from the site if it is sold.
-9. as a regular visitor, I want to navigate easily through the pages.
-10. As a regular visitor, I want to see details of each item clearly.
-11. As a regular visitor, I want to login from my mobile and expect the site and image to be fully responsive.
-12. As a seller, I want to see all the items posted by me in one place, so that I can take decisions on that.
+10. As a regular visitor, I want to navigate easily through the pages.
+11. As a regular visitor, I want to see details of each item clearly.
+12. As a regular visitor, I want to login from my mobile and expect the site and image to be fully responsive.
+13. As a seller, I want to see all the items posted by me in one place, so that I can take decisions on that.
 
 ### **Business Stories**
 
