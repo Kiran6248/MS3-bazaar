@@ -72,6 +72,8 @@ This website is created as a platform to meet and know about potential buyers an
 
 This is created for educational purpose only as my Third Milestone Project for Code Institute.
 This site is made by using my new learned skill of Backend Development with the addition of Frontend Development.
+
+[Go back to Top](#table-of-content)
 ***
 
 ## **User experience**
@@ -117,6 +119,8 @@ This site is made by using my new learned skill of Backend Development with the 
   2. To manage all the ads posted in the site and delete any appropriate one.
   3. To add more categories later if required.
   4. The Buyers/Sellers can contact me easily through a contact form or they can find me in social media accounts.
+
+  [Go back to Top](#table-of-content)
   ***
 
 ## **Planes of Development**
@@ -216,6 +220,8 @@ Google font **Roboto Slab** with a fallback of **sans serif** is selected for th
 #### **Images**
 The images used in this project are taken by the developer and are subject of demonstration only.
 The Hero Image is taken from Pexel.com. It is a market image of Dubai, clicked by Sanketh Rao.
+
+[Go back to Top](#table-of-content)
 ***
 
 ## **Features**
@@ -391,6 +397,8 @@ by adding one code in the CSS Style sheet.
 * One wishlist will be added with every Ad posted. By clicking on that ad the User can save that ad in his/her Bucket.
 * Money transaction can also be implemented in the app only.
 
+[Go back to Top](#table-of-content)
+
 ***
 ## **Technologies used**
 
@@ -435,6 +443,8 @@ by adding one code in the CSS Style sheet.
  * [EmailJS](https://www.emailjs.com/) is used to connect the contact form to the email address.
  * [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool) was used to take screenshots of the images and codes.
  * [ImgBB](https://imgbb.com/) is used to store my images.
+
+ [Go back to Top](#table-of-content)
 ***
 
 
@@ -451,11 +461,15 @@ by adding one code in the CSS Style sheet.
  * [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
 
  * [MonoDB Documentation](https://docs.mongodb.com/)
+
+[Go back to Top](#table-of-content)
 ***
 
 ## **Testing**
 
 **The detailed testing report can be found here** [Testing](TESTING.md)
+
+[Go back to Top](#table-of-content)
 
 ***
 ## **Deployment**
@@ -528,8 +542,8 @@ To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kira
    9. Enter the following keys and values, which must match those in the env.py file created earlier:
 
    
-| Key           | Value                                                                                                   |
-| ------------- |:-------------------------------------------------------------------------------------------------------:| 
+| Key           | Value                                                                                                  |
+| ------------- |:------------------------------------------------------------------------------------------------------:| 
 | IP            | 0.0.0.0                                                                                                 | 
 | PORT          | 5000                                                                                                    |   
 | SECRET_KEY    | app secret key                                                                                        | 
@@ -541,7 +555,7 @@ To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kira
    11. Under **Manual deploy**, select **master** and click **Deploy Branch**
    12. Once the app has finished building, click **Open app** from the header row of the dashboard.
 
- 
+ [Go back to Top](#table-of-content)
 ***
 
 ## **Credits**
@@ -576,6 +590,8 @@ To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kira
  * Miklos (Code Institute Tutor)- For helping me in finding out the error in View Ad page.
 
  * My Friends and Family for helping me in User testing of the site.
+
+ [Go back to Top](#table-of-content)
 
 ***
 
