@@ -1,5 +1,5 @@
 #  Testing page for Bazaar
-  ### *Buy what you want , Sell what you don't**.
+  ### *Buy what you want , Sell what you don't*.
 
 ### A Webpage for buying and selling of second hand goods.
 

@@ -52,10 +52,9 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 * [Testing](#testing)
 
 * [Deployment](#deployment)
-    * [Initial Deployment](#initial-deployment)
-    * [How to Fork it](#how-to-fork-it)
-    * [How to Clone it](#how-to-clone-it)
-    * [Making a Local clone](#making-a-local-clone)
+    * [Prerequisites](#prerequisites)
+    * [How to Clone Bazaar](#how-to-clone-bazaar)
+    * [How to Deploy to Heroku](#how-to-deploy-to-heroku)
 
 * [Credits](#credits)
     * [Code](#code)
@@ -490,6 +489,10 @@ by adding one code in the CSS Style sheet.
 * [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool)
 
   Snipping Tool was used to take screenshots of the images and codes.
+* [ImgBB](https://imgbb.com/)
+
+  ImgBB is used to store my images.
+
 
 ***
 ## **Resources**
@@ -512,13 +515,21 @@ by adding one code in the CSS Style sheet.
 ***
 ## **Deployment**
 
-### **Initial Deployment**
+   The Master branch of this repository is used for the whole development of the site.
 
-### **How to Fork it**
+### **Prerequisites**
 
-### **How to Clone it**
+   [Python 3](https://www.python.org/downloads/) - core code
+   [PIP](https://pypi.org/project/pip/) - package installation
+   [Git](https://git-scm.com/) - version control
+   [Mongo DB](https://www.mongodb.com/)
 
-### **Making a Local clone**
+   
+
+### **How to clone Bazaar**
+
+### **How to deploy to Heroku**
+
 
 ***
 
