@@ -398,6 +398,8 @@ by adding one code in the CSS Style sheet.
 * Money transaction can also be implemented in the app only.
 * Direct Email facility may be added in the future, so that buyer can direct contact the seller.
 * Online chat facility or message thread may be added to discuss about the item with the seller.
+* In the current version, email and telephone of seller is visible to all, which is not a good practice in data protection act.
+ so, In future it would be considered to hide it and add some another portal to contact the seller.
 
 [Go back to Top](#table-of-content)
 

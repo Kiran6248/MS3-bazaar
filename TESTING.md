@@ -409,6 +409,10 @@ Testing client stories from UX part of [README.md](README.md)
 * During User testing it was observed that after opening View Ad page, user has no idea what to do next, so one statement is added based on availability of the item,
   If it is available then contact seller with email or telephone, if sold then keep shopping. 
 
+* The Email.js user id, which is used for this site was first kept in base.html as it has to be in <head> element, but after considering of 
+  not disclosing any sensitive information on front page, it is transferred to to contact.html page and to keep it in head element , it is being wrapped in 
+  another code which is a part of head element.
+  
 [Go to Top](#testing)
 ***
 ## **Bug Report**
@@ -466,6 +470,17 @@ Testing client stories from UX part of [README.md](README.md)
 
 
 #### **Open Bug**
+
+* The Home page(get_ads.html) is showing one warning in console on line 44 that special chahracters must be escaped.
+  the character [>] is a part of the if loop and can not be escaped.
+
+* The Profile page is also showing warning in console in line 15 that special chahracters must be escaped.
+  the character [>] is a part of the if loop and can not be escaped.
+
+* Every page is showing that the Doctype must be declared first. 
+ As jinja template is used in the project, so that warning can be ignored for now.
+
+* Edit ad page is giving error that is_available id is used twice, That is part of the code and can not be changed. 
 
 [Go to Top](#testing)
 ***
