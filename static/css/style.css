@@ -21,7 +21,6 @@ main {
 }
 
 /*------------------------------------------------navbar*/
-
 nav ul li a {
     font-size: 1.2rem;
 }
@@ -40,22 +39,19 @@ nav ul li a {
 }
 
 .page-footer li a i {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.56rem;
     color: #fff;
     text-align: center;
-    line-height: 40px;
 }
 
 /*------------------------------------------------cards*/
-
 .welcome {
    padding-top: 5px;
    background-color: rgb(0, 128, 128, 0.7);
-   margin-top: 100px;
+   margin-top: 6.25rem;
    padding-bottom: 5px;
-
 }
 
 .welcome p {
@@ -65,11 +61,10 @@ nav ul li a {
 
 .card-content p {
     font-family: "Roboto Slab", sans-serif !important;
-
 }
 
 .card .card-image-main img {
-    height: 350px !important;
+    height: 21.87rem !important;
     object-fit: cover;
     width: 100% !important;
     overflow: hidden;
@@ -89,14 +84,12 @@ nav ul li a {
 .card-content-main .section p {
     font-size: 1rem;
     color: #000;
-   
 }
 
 .card-content-main .section .fas {
     color: #000;
     padding-bottom: 5px;
 }
-
 
 /*------------------------------------------------hero image*/
 .hero-home {
@@ -124,7 +117,6 @@ nav ul li a {
 .row .view-button {
     padding-top: 10px;
 }
-
 
 /*------------------------------------------------media query*/
 @media (min-width: 992px){
