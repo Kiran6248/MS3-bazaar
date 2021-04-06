@@ -1,3 +1,6 @@
+//Javascript code to send email through emailjs.init
+//The JS code for this section is referred from my Milestone 2 project
+
 var emailjs;
 function sendMail(contactForm){
     emailjs.send("gmail","bazaar",{

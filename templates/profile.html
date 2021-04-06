@@ -35,7 +35,7 @@
                                     <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo">
                                 </div>
                                 <div class="card-content-main">
-                                <!--ad title-->
+                                    <!--ad title-->
                                     <span class="card-title activator orange-text text-darken-4"> {{ ad.ad_title }}</span>
                                     <div class="divider"></div>
                                     <!--ad category name-->
@@ -59,7 +59,6 @@
                                                 data-position="right" data-tooltip="SOLD!">
                                                 <span class="new badge red " data-badge-caption="">SOLD</span></i>
                                         {% endif %}
-                                    
                                     </div>
                                 </div>
                             </div>
@@ -82,19 +81,16 @@
         </div>
     {% endif %}
 
-     <div class="row">
-            <div class="col s12 m8 offset-m2">
-                <div class=" teal lighten-5">
-                    <h5 class="center-align teal-text-text-darken-4">
-                        Do you want to see ads posted by others?
-                        <p>Click <a href="{{ url_for('get_ads') }}">Home</a> to view all ads!</p>
-                    </h5>
-                </div>
+    <!--Link to Home page-->
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class=" teal lighten-5">
+                <h5 class="center-align teal-text-text-darken-4">
+                    Wish to see ads posted by others?
+                    <p>Click <a href="{{ url_for('get_ads') }}">Home</a> to view all ads!</p>
+                </h5>
             </div>
         </div>
-
-    
-
-
+    </div>
 
 {% endblock %}

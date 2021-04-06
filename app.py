@@ -137,6 +137,7 @@ def post_ad():
 
 @app.route("/edit_ad/<ad_id>", methods=["GET", "POST"])
 def edit_ad(ad_id):
+    # Defensive code to prevent user to edit another's code
     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
     if ad.get("posted_by") != session.get("user", ""):
         return redirect(url_for("get_ads"))
@@ -168,6 +169,7 @@ def edit_ad(ad_id):
 
 @app.route("/delete_ad/<ad_id>")
 def delete_ad(ad_id):
+    # Defensive code to prevent user to delete another's code
     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
     if ad.get("posted_by") != session.get("user", ""):
         return redirect(url_for("get_ads"))
