@@ -93,7 +93,7 @@ nav ul li a {
 
 /*------------------------------------------------hero image*/
 .hero-home {
-    background-image: url(https://i.ibb.co/YBYM7rp/pexels-sanketh-rao-716107.jpg);
+    background-image: url(https://i.ibb.co/wdcy9BH/hero.jpg);
     background-position: center;
 }
 
@@ -121,6 +121,6 @@ nav ul li a {
 /*------------------------------------------------media query*/
 @media (min-width: 992px){
     .brand-logo {
-        margin-left: 0.188rem;
+        margin-left: 25px;
     }
 }
