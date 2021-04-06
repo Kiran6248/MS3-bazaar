@@ -389,11 +389,27 @@ Testing client stories from UX part of [README.md](README.md)
 [Go to Top](#testing)
 ***
 ## **Lighthouse**
+ * The lighthouse performance score was 67 in the beginning, after changing all the px to rem in style.css file, the score is increased to 72.
 
+[Go to Top](#testing)
 ***
 
 ## **Project Barrier**
 
+* During User Testing it was found that the View Ad page can be edited and deleted from the URL even if the user is not the owner of the post.
+ To prevent this One defensive Programming is added in the app.py, which directs the user to Home page if anyone tries to do that.
+ The code can be seen here:
+
+  ![image](static/images/app.JPG)
+
+* During User Testing it was found that User gets confused after coming to Profile page, 
+  They had no idea which link to click next, so one message is added at the bottom of the page, which has link to Home page and tell them of they want to
+  view all ads then click here.
+
+* During User testing it was observed that after opening View Ad page, user has no idea what to do next, so one statement is added based on availability of the item,
+  If it is available then contact seller with email or telephone, if sold then keep shopping. 
+
+[Go to Top](#testing)
 ***
 ## **Bug Report**
 #### **Bug Found and Resolved**
@@ -451,6 +467,8 @@ Testing client stories from UX part of [README.md](README.md)
 
 #### **Open Bug**
 
+[Go to Top](#testing)
+***
 
 
 

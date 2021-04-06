@@ -35,7 +35,7 @@ nav ul li a {
 }
 .page-footer li {
     display: inline;
-    margin: 15px;
+    margin: 0.938rem;
 }
 
 .page-footer li a i {
@@ -48,10 +48,10 @@ nav ul li a {
 
 /*------------------------------------------------cards*/
 .welcome {
-   padding-top: 5px;
+   padding-top: 0,313rem;
    background-color: rgb(0, 128, 128, 0.7);
    margin-top: 6.25rem;
-   padding-bottom: 5px;
+   padding-bottom: 0.313rem;
 }
 
 .welcome p {
@@ -71,7 +71,7 @@ nav ul li a {
 }
 
 .card .card-image img {
-    height: 565px;
+    height: 35.5rem;
     overflow: hidden;
     object-fit: cover;
     width: 100% !important;
@@ -88,7 +88,7 @@ nav ul li a {
 
 .card-content-main .section .fas {
     color: #000;
-    padding-bottom: 5px;
+    padding-bottom: 0.313rem;
 }
 
 /*------------------------------------------------hero image*/
@@ -98,7 +98,7 @@ nav ul li a {
 }
 
 .hero-image {
-    height: 400px;
+    height: 25rem;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -111,16 +111,16 @@ nav ul li a {
 
 /*------------------------------------------------buttons*/
 .back-button-container {
-    margin-top: 10px;;
+    margin-top: 0.625rem;;
 }
 
 .row .view-button {
-    padding-top: 10px;
+    padding-top: 0.625rem;
 }
 
 /*------------------------------------------------media query*/
 @media (min-width: 992px){
     .brand-logo {
-        margin-left: 3rem;
+        margin-left: 0.188rem;
     }
 }

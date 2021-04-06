@@ -397,7 +397,7 @@ by adding one code in the CSS Style sheet.
 * One wishlist will be added with every Ad posted. By clicking on that ad the User can save that ad in his/her Bucket.
 * Money transaction can also be implemented in the app only.
 * Direct Email facility may be added in the future, so that buyer can direct contact the seller.
-* Online chat facility may be added to discuss about the item with the seller.
+* Online chat facility or message thread may be added to discuss about the item with the seller.
 
 [Go back to Top](#table-of-content)
 
