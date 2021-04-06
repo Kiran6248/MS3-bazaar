@@ -89,10 +89,12 @@ nav ul li a {
 .card-content-main .section p {
     font-size: 1rem;
     color: #000;
+   
 }
 
 .card-content-main .section .fas {
     color: #000;
+    padding-bottom: 5px;
 }
 
 

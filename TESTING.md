@@ -5,7 +5,7 @@
 
 [Main README.md file](README.md)
 
-[View live site here]()
+[View live site here](https://ms3-bazaar.herokuapp.com/get_ads)
 
 ## Testing
 
@@ -160,7 +160,7 @@ Testing client stories from UX part of [README.md](README.md)
 7. Log in to the site, Check If **Profile**, **Post Ad**, and **Logout** link is visible.
 8. Click the **Profile** link, check if the Profile page opens.
 9. Click the **Post Ad** link, check if the Post Ad page opens.
-10. Click the **Logout** link, check if the user logs out.
+10. Click the **Logout** link, check if the user logs out and Log in page opens.
 11. Log in from the Admin's account, Check if **Manage Categories** link is visible.
 12. Click the **Manage categories** link, check if the Manage Categories page opens.
 13. Check for **Responsiveness** in mobile view, the navigation bar collapsed in the hamburger icon.
@@ -192,30 +192,201 @@ Testing client stories from UX part of [README.md](README.md)
 
 ### **Elements on separate page**
 
-#### **Home Page**
+### **Home Page**
+#### **Hero Image**
+
+ 1. Check te Hero inage is also loading fine and is always on top of the Home page.
+ 2. Check for **Responsiveness** on different screen sizes.
+
+#### **Welcome Note**
+
+  1. Check that the welcome note is always on the Hero Image.
+  2. Check for the fonts, and is it readable with the dark background.
+  3. Check for the Grammatical mistakes if any, in the text written.
+  4. Check for **Responsiveness** on different screen sizes.
+
+#### **Search Bar**
+
+ 1. Check the search bar is loading correctly in the Home page.
+ 2. Type any random word and click teal coloured search button, the result is showing below the search bar.
+ 3. Type any word which has very rare chances of being in the ad page. like- "aeroplane", then "No Result Found" should flash below the search bar.
+ 4. Click the orange refresh button and page should refreshed and all the ads should appear.
+ 5. Go to mobile view and repeat steps 1 to 4.
+
+#### **Ad Cards**
+
+ 1. Check for the positioning of the Ad cards, it is well aligned.
+ 2. Check for the image sizing of the cards, all images are equal in size.
+ 3. Check for the description below the image, it is informative enough to know about the thing.
+ 4. Click on the card, it opens in new page.
+ 5. Go to the mobile view and repeat steps 1 to 4.
 
 
+### **View Ad Page**
+
+#### **Back Button**
+
+ 1. Check the back button, it is always on the top left of the page.
+ 2. Click the button, It is taking the user to the Home page.
+ 3. Repeat the steps in mobile view.
+
+#### **Edit Button**
+
+ 1. Log in with username, who has posted anything or with admin profile.
+ 2. Check the Edit button is showing on the top of the View Ad page.
+ 3. Click the Edit Button, It opens the Edit Ad page.
+ 4. Go to the Mobile view, the button is visible there and working fine.
+
+#### **Delete Button**
+
+ 1. Log in with username, who has posted anything or with admin profile.
+ 2. The delete button shouls be there on top of the page.
+ 3. Click the Delete button, The Delete Modal pos up with Cancel and Delete buttons..
+ 4. Click Cancel and modal should close.
+ 5. Click Delete and the Ad should get deleted and user is directed back to the Home page.
+
+#### **Ad Card Image**
+
+ 1. Check the Ad card image is fully responsive and covers half the page in medium to large screen size.
+ 2. Check the image takes full screen size in mobile view.
+ 3. Check for the reponsiveness and image doesn't stretched or squished while checking responsiveness.
+
+#### **Ad Details**
+
+ 1. Check the Ad card details is fully responsive and covers half the page in medium to large screen size.
+ 2. Check the details takes full screen size in mobile view.
+ 3. Check for the details spelling error.
+ 4. Check the Tooltip if it showing correct status when hovered over.
+ 5. Check the Ad description is informative.
+
+### **Post Ad Page**
+
+ 1. Log in to the site and check if the Post Ad link appears in the Navbar.
+ 2. Click the Post Ad link and **Post Ad** form should open.
+ 3. Check the Category dropdown and select anything, the category gets selected.
+ 4. Do not select anything and got o next input, the category section becomes red because of proper validation.
+ 5. Check the Photo URL input section, upload some link and it should turn green.
+ 6. Check Price, Description and Title inputs by adding some text and numbers, it takes everything.
+ 7. Check the condition dropdown, It is allowing to slect from the 3 conditions. 
+ 8. Check Location, email and Telephone by adding some details, it is taking all details.
+ 9. Check the switch if it is working by slecting available or sold, of your choice.
+ 10. Click the **Post Ad** button, The ad is posted and user is directed back to Home Page with new Ad posted.
+ 11. Leave any input field blank and click **Post Ad**, the blank section will prompt to fill it up.
+ 12. Check in diffrent screen sizes, repeat steps 1 to 11.
+
+### **Edit Page**
+
+ 1. Log in through any user profile who has posted anything or Admin's profile.
+ 2. The Edit button should be visible on vied Ad page, which directs the user to Edit Ad page.
+ 3. Check if the details of the cards are already filled in the input sections.
+ 4. Change any input, dropdown or switch status, Click **Edit Ad** button in the bottom of the page.
+ 5. Flash message appears as **Ad Successfully Updated** and user remains on the Edit Ad page.
+ 6. After any change, Click **Cancel** button at the bottom of the page, 
+    the user is directed to the home page without any change done to the card detail.
+ 7. Go to the mobile view and repeat steps 1 to 6.
 
 
+### **Delete Modal**
+
+ 1. Log in through any user profile who has posted anything or Admin's profile.
+ 2. The Delete button should be visible on vied Ad page, which opens the Delete Modal.
+ 3. The delete modal has 2 buttons, Cancel and Delete.
+ 4. Click **Cancel** and Modal get closed and User remain on the View Ad page.
+ 5. Click **Delete** and the Ad gets deleted and user is directed to the HOme Page.
+ 6. Repeat steps for the mobile view also.
 
 
-#### **View Ad Page**
-#### **Post Ad Page**
-#### **Edit Page**
-#### **Delete Modal**
-#### **Profile Page**
-#### **Manage Catagory Page**
-#### **Contact Us Page**
-#### **Login Page**
-#### **Register Page**
+### **Profile Page**
+
+ 1.  Log in through any user profile who has posted anything or Admin's profile.
+ 2. A Welcome message with usename appears.
+ 3. All the Ads posted by the user is visible on the page, like the home page.
+ 4. Logout and then log in again with a username who has not posted anything.
+ 5. A message appears that user has not posted anything and one link is there which directs the user to the Post Ad page.
+ 6. Go to mobile view and repeat step 1 to 5.
+
+
+### **Manage Catagory Page**
+
+ 1. Log in with Admin's profile, The **manage Category** link should be there on the Navbar.
+ 2. Click thet and Manage category page opens.
+ 3. Click the **Add Category** button on the top, Add Category Page opens.
+ 4. Add any category, and click the Add Category button, The new category gets added with a flash message that **New categaory added** and user is directed to the Category page.
+ 5. On Category card, click Edit button, the edit category page opens, with the existing category name already there.
+ 6. Make some changes and click Edit, user directed back to manage Category page with message "category successfully Updated".
+ 7. Click Cancel and User directed back to Manage Category page.
+ 8. Click Delete button on the Category Card, Delete modal pops up, click vcancel and Model is closed.
+ 9. click delete on Modal and the category card gets deleted with a flash message that Category Successfullt Deleted.
+ 10. Go to the mobile View and repeat steps 1 to 9.
+
+### **Contact Us Page**
+
+ 1. Check spelling and content in the form.
+ 2. Check the **Full Name** section and the form, check if it allows writing.
+ 3. Check in the **Email** section, check if it gives a message when the email format is not correct.
+ 4. Write some text in the **Feedback** area, check if it allows writing more than 3 lines.
+ 5. Click the **Submit** button, check if the email is received in the recipient email address.
+ 6. Click the submit button, check it turns **green** color after submitting, and its text changes to `"Feedback Sent"`.
+ 7. Go to Mobile view and repeat steps 1 to 6.
+
+### **Login Page**
+
+ 1. Check the Usename section, check if it allows to enter after following the pattern.
+ 2. Try to enter something not in the pattern, the sections turns red and message also turns red, which says "Usename and Password must be
+    5-15 characters long, with only numbers and letters"
+ 3. Repeat this with password.
+ 4. Click Log In button, profile Page gets open.
+ 5. Check the small text below the form , click the Register link and register form gets open.
+ 6. Repeat the steps with Mobile view.
+
+### **Register Page**
+
+ 1. Check the Usename section, check if it allows to enter after following the pattern.
+ 2. Try to enter something not in the pattern, the sections turns red and message also turns red, which says "Usename and Password must be
+    5-15 characters long, with only numbers and letters"
+ 3. Repeat this with password.
+ 4. Click Register button, profile Page gets open with "Registration Successful" message.
+ 5. Check the small text below the form , click the log in link and Login form gets open.
+ 6. Repeat the steps with Mobile view. 
+
+ [Go to Top](#testing)
 ***
 
 ## **Responsiveness**
 
+ * DevTools- Devices tested across a range of widths: iPhone5(320px)| Samsung S5(360px)| iPhone6/7/8/X(375px)| iPhone6/7/8 Plus(414px)| iPad(768px)| iPad Pro(1020px)| Laptop(1200px)| Large Desktop Screen(1920px)
+ * Viewed site on above range on various browsers: Google Chrome, Firefox, Opera, Safari.
+ * Viewed on physical devices: small phone(320px)| Large phone(414px)| large tablet(768px)| medium, laptop(1366px)| Large Desktop Screen(1920px)
+
+[Go to Top](#testing)
 ***
 
 ## **Browser Compatibility**
 
+### **Desktop / Laptop**
+
+ **Google Chrome** - All tested and working correctly.
+
+ **Microsoft Edge** - All tested and working correctly.
+
+ **Mozilla Firefox** - All tested and working correctly.
+
+ **Safari** - All tested and working correctly.
+
+### **Tablet**
+
+ **Safari** - All tested and working correctly.
+
+### **Mobile**
+
+ **Google Chrome** - All tested and working correctly.
+
+ **Safari** - All tested and working correctly.
+
+ **Samsung Internet** - All tested and working correctly.
+ 
+     
+[Go to Top](#testing)
 ***
 ## **Lighthouse**
 
