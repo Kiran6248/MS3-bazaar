@@ -137,6 +137,10 @@ def post_ad():
 
 @app.route("/edit_ad/<ad_id>", methods=["GET", "POST"])
 def edit_ad(ad_id):
+    ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+    if ad.get("posted_by") != session.get("user", ""):
+        return redirect(url_for("get_ads"))
+
     if request.method == "POST":
         is_available = "on" if request.form.get("is_available") else "off"
         submit = {
@@ -164,6 +168,10 @@ def edit_ad(ad_id):
 
 @app.route("/delete_ad/<ad_id>")
 def delete_ad(ad_id):
+    ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+    if ad.get("posted_by") != session.get("user", ""):
+        return redirect(url_for("get_ads"))
+
     mongo.db.ads.remove({"_id": ObjectId(ad_id)})
     flash("Ad Successfully Deleted")
     return redirect(url_for("get_ads"))
