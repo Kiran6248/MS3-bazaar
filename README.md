@@ -59,7 +59,6 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 * [Credits](#credits)
     * [Code](#code)
     * [Media](#media)
-    * [Student projects](#student-projects)
     * [Acknowledgments](#acknowledgments)
 ***
 
@@ -397,6 +396,8 @@ by adding one code in the CSS Style sheet.
 
 * One wishlist will be added with every Ad posted. By clicking on that ad the User can save that ad in his/her Bucket.
 * Money transaction can also be implemented in the app only.
+* Direct Email facility may be added in the future, so that buyer can direct contact the seller.
+* Online chat facility may be added to discuss about the item with the seller.
 
 [Go back to Top](#table-of-content)
 
@@ -569,6 +570,8 @@ To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kira
 
 * The Navbar, Footer, Cards, Search bar, Forms, and Modal codes were referred from [MaterializeCSS](https://materializecss.com/)
 
+* The colour placeholder code for README.md is taken from [Stack overflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file)
+
 
 ### **Media**
 
@@ -578,11 +581,6 @@ To deploy the aoo to Heroku from its [GitHub repository](https://github.com/Kira
 
 * The 404.html and 500.html image is taken from [PNGTree.com](https://pngtree.com/freepng/404-error-page_2596665.html)
 
-### **Student projects**
-
-* [Self Isolution](https://github.com/Edb83/self-isolution#top)
-
-* [Second Chance Web](https://github.com/mihaelasandrea/second-chance-web)
 
 ### **Acknowledgments**
 
