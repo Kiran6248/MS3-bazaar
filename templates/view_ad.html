@@ -92,6 +92,22 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row center valign">
+            <div class=" card col s12 m6 offset-m3 l6 offset-l3 z-depth-3 waves-effect waves-block waves-light card teal lighten-5">
+                {% if ad.is_available == "on" %}
+                    <span class=" card-title activator center-align orange-text text-darken-4">
+                        The item is still available. Contact Seller with the Email or Telephone Provided above.
+                    </span>
+                {% else %}
+                    <span class="card-title activator center-align orange-text text-darken-4">
+                        Oops.. it's sold.. See more ads to keep Shopping.
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
    
     <!--delete modal-->
     <div id="{{ ad._id }}" class="modal">
