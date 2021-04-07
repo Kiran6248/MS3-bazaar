@@ -64,14 +64,14 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 
 ## **Overview**
 
-A Bazaar is a permanently enclosed marketplace or street where good and services are exchanged or sold. The term bazaar originates from the Persian word **bazar**.
+A Bazaar is a permanently enclosed marketplace or street where goods and services are exchanged or sold. The term bazaar originates from the Persian word **bazar**.
 
-I decided to keep *Bazaar* as name of my site because it also server that purpose.
+I decided to keep *Bazaar* as the name of my site because it also serve that purpose.
 
 This website is created as a platform to meet and know about potential buyers and sellers.
 
-This is created for educational purpose only as my Third Milestone Project for Code Institute.
-This site is made by using my new learned skill of Backend Development with the addition of Frontend Development.
+This is created for educational purposes only as my Third Milestone Project for Code Institute.
+This site is made by using my newly learned skill of Backend Development with the addition of Frontend Development.
 
 [Go back to Top](#table-of-content)
 ***
@@ -80,45 +80,45 @@ This site is made by using my new learned skill of Backend Development with the 
 
 ### **User Goals**
 
-1. Somewhere to search for few things which I want to have and do not want to pay heavy price.
-2. To find some place where I can sell some of my Favourite things, which I do not need anymore.
-3. To find buyer for my favourite things, which I can't keep anymore and don't want to throw in garbage as well.
-4. Buyers who are relocating, can find things in resonable rate for the initial setup of their home and office.
-5. In the current Pandemic situation, User may want to browse things from the safe environment of their home.
-6. User friendly website, where I don't have to be very technically educated to publish my ads.
+1. Somewhere to search for few things which I want to have and do not want to pay a heavy price.
+2. To find someplace where I can sell some of my Favourite things, which I do not need anymore.
+3. To find a buyer for my favorite things, which I can't keep anymore and don't want to throw in the garbage as well.
+4. Buyers who are relocating can find things at reasonable rate for the initial setup of their home and office.
+5. In the current Pandemic situation, Users may want to browse things from the safe environment of their home.
+6. User-friendly website, where I don't have to be very technically educated to publish my ads.
 
 ### **Business Goals**
 
 1. During the current world condition, when it is difficult to find Non-essential shops, this site would provide a place to buy and sell some useful items.
-2. A website, where Buyer and Seller can easily contact each other, if they are interested in any product posted here.
-3. An easy to navigate site, with buttons provided for these paths through the site.
-4. All the items will be categorised and will be easy to search, to save the time and energy of everyone.
-5. The site owner will have the full control on every post, and He/She can add or remove categories or ads.
+2. A website, where Buyer and Seller can easily contact each other if they are interested in any product posted here.
+3. An easy-to-navigate site, with buttons provided for these paths through the site.
+4. All the items will be categorized and will be easy to search, to save the time and energy of everyone.
+5. The site owner will have full control over every post, and He/She can add or remove categories or ads.
 
 
 ### **User Stories**
  **Visitor Stories**
 1. As a new visitor, I want to be able to easily find the product that I am looking for.
-2. As a new visitor, I want to search the product by using simple words, it should not be always the keyword.
+2. As a new visitor, I want to search for the product by using simple words, it should not be always the keyword.
 3. As a new visitor, I want to first select the item by its appearance and price.
 4. As a new visitor, I want to contact the seller if I want to buy Something.
 5. As a new visitor, I want to be able to contact the admin of the page if I am not satisfied with my purchase.
 6. As a new visitor, I want to register my account easily if I want to sell something.
 7. As a visitor, I want to know if the product is available or not, before clicking and viewing full details.
-8. As a returning visitor, I want to login easily and make some changes in my product. i.e. price.
+8. As a returning visitor, I want to login easily and make some changes to my product. i.e. price.
 9. As a returning visitor, I want to login easily and remove my product from the site if it is sold.
 10. As a regular visitor, I want to navigate easily through the pages.
-11. As a regular visitor, I want to see details of each item clearly.
+11. As a regular visitor, I want to see the details of each item.
 12. As a regular visitor, I want to login from my mobile and expect the site and image to be fully responsive.
 13. As a seller, I want to see all the items posted by me in one place, so that I can take decisions on that.
 
 ### **Business Stories**
 
   As the site owner I want/expect/need:
-  1. To display the ads in a colourful manner.
-  2. To manage all the ads posted in the site and delete any appropriate one.
+  1. To display the ads colorfully.
+  2. To manage all the ads posted on the site and delete any appropriate one.
   3. To add more categories later if required.
-  4. The Buyers/Sellers can contact me easily through a contact form or they can find me in social media accounts.
+  4. The Buyers/Sellers can contact me easily through a contact form or they can find me on social media accounts.
 
   [Go back to Top](#table-of-content)
   ***
@@ -126,29 +126,29 @@ This site is made by using my new learned skill of Backend Development with the 
 ## **Planes of Development**
 ### **Strategy**
 
-The aim of making this site is to make a website which has CRUD mechanism and Database access functionality.
-I decided to make a second Hand goods buying and selling site, which will work as a platform for peoples to meet potential buyers for their things, 
-as well buyers can find items in resonable rates.
+The aim of making this site is to make a website that has CRUD mechanism and Database access functionality.
+I decided to make a Second-Hand good buying and selling site, which will work as a platform for peoples to meet potential buyers for their things, 
+as well buyers can find items at reasonable rates.
 
 ### **Scope**
 
-I want to make a website which is accessible to everyone, People can browse items without being Registered, so that there will be no hesitation in searching anything.
-People can post their items for sell using simple steps and buyers can contact sellers from the contact details provides.
-It will be easier to see details of every item as it will open in a new page. 
-Users can contact the admin easily for Feedback or Complaints. Sellers can see all the ads posted by them in their profile page.
+I want to make a website that is accessible to everyone, People can browse items without being Registered so that there will be no hesitation in searching for anything.
+People can post their items for sale using simple steps and buyers can contact sellers from the contact details provides.
+It will be easier to see the details of every item as it will open on a new page. 
+Users can contact the admin easily for Feedback or Complaints. Sellers can see all the ads posted by them on their profile page.
 
 ### **Structure**
 
 This website will be a multi-page site, where pages are connected through Navigation Bar or Python. 
-The navigation bar will have links for home page, Login, Register and Contact form. The navigation links will change and show logout and Post ad option Once the user is logged in.
-The navigation bar will be collapsible for Mobile view and expand in sidebar when clicked.
-There will be a footer, which will show the contact details of the admin. It will be sticky and always remain in the end of the page.
-2 forms will be there, one for Login and other for Registeration. 
+The navigation bar will have links for the Home page, Login, Register, and Contact form. The navigation links will change and show the logout and Post ad option Once the user is logged in.
+The navigation bar will be collapsible for Mobile view and expand in a sidebar when clicked.
+There will be a footer, which will show the contact details of the admin. It will be sticky and always remain at the end of the page.
+2 forms will be there, one for Login and the other for Registration. 
 One contact form will also be there for the users to contact the admin.
 There will be pages for Posting the ads and Editing the already published ads.
 Users can delete their posts if they want.
-Admin will have the power to delete any post, if that is unsuitable for the page.
-All the data will be stored in MongoDB and Flask framework will be used to develop the site and finally it will be deployed by using Heroku.
+Admin will have the power to delete any post if that is unsuitable for the page.
+All the data will be stored in MongoDB and Flask framework will be used to develop the site and finally, it will be deployed by using Heroku.
 
 
 ### **Skeleton**
@@ -242,7 +242,7 @@ The Hero Image is taken from Pexel.com. It is a market image of Dubai, clicked b
 **Footer**
 
 * The Footer is situated at the bottom of every page. Which is having Copyright information and My Github and Linkedin account links.
-* [MaterializeCSS](https://materializecss.com/footer.html) is used to make the footer syckey at the bottom of every page, 
+* [MaterializeCSS](https://materializecss.com/footer.html) is used to make the footer sticky at the bottom of every page, 
 by adding one code in the CSS Style sheet.
 * The code added to style sheet is this.
 
@@ -252,18 +252,18 @@ by adding one code in the CSS Style sheet.
 
 **Home Page**
 
-* One Hero Image is there on the Home page, which is very colourful image of a marketplace in Dubai. It is taken from 
+* One Hero Image is there on the Home page, which is a very colorful image of a marketplace in Dubai. It is taken from 
   [Pexel.com](https://www.pexels.com/photo/assorted-commemorative-plates-716107/)
 * A welcome note is situated on the Hero Image to give the introduction about the site and its purpose.
 * A search Bar is given to search for ads through their keywords.
-* Ad image cards are there as 3 in a row, Which shows image of the Ad and details about its name and vailability. 
- It is reponsive and changes to 2 in a row for medium size screen and 1 in a row for Small size(mobile) screen.
+* Ad image cards are there as 3 in a row, Which shows the image of the Ad and details about its name and availability. 
+ It is responsive and changes to 2 in a row for medium size screen and 1 in a row for Small size(mobile) screen.
 * The card image will open a new page when clicked on it, that page will have details for individual Ads.
 
 **View Ad Page**
 
-* This page opens after clicking on the Ad card in **Home** page.
-* This page have a full size image of the Ad and Deatail of it. The details shown are 
+* This page opens after clicking on the Ad card on the **Home** page.
+* This page has a full-size image of the Ad and Detail of it. The details shown are 
   1. Ad Title
   2. Category
   3. Ad Description
@@ -274,41 +274,41 @@ by adding one code in the CSS Style sheet.
   8. Email
   9. Telephone
   10. Availability (Available or Sold)
-* The availabity is shown by a **tooltip and one **badge** also, which is *Green* in colour for available ads and *Red* for sold.
+* The availability is shown by a **tooltip and one **badge** also, which is *Green* in color for available ads and *Red* for sold.
 * There is a **Back** button on top of the page which takes back to the **Home** page.
-* One **Edit** and One **Delete** button is also there on the top of the page, which is visible only to the owner of the Ad(Posted by) and to the Admin of the site.
+* One **Edit** and One **Delete** buttons are also there on the top of the page, which is visible only to the owner of the Ad(Posted by) and to the Admin of the site.
 
 **Login Page**
 
-* The **Login** page has a form input for **Username** and **Password**. The input section will become Red if the certain input conditions are not fulfilled.
- For example- Usename and Password should be 5-15 characters alphanumeric word with no spaces.
-* There is one **Login** button which directs the User to **Profile** page after login.
+* The **Login** page has a form input for **Username** and **Password**. The input section will become Red if certain input conditions are not fulfilled.
+ For example- the Username and Password should be 5-15 characters alphanumeric word with no spaces.
+* There is one **Login** button that directs the User to the **Profile** page after login.
 * For new users, One link is given to direct them to the Register page.
-* One flash message saying "Username or Password is Incorrect" will show if the Username or Password is Incorrect.
+* One flash message saying "Username or Password is Incorrect" will show if the Username or Password is incorrect.
 
 **Register Page**
 
-* The Register page will have a form to enter Username and Password. This will also have some input conditions, same as the Login Form.
-* Submit button is there, which will take the user to Profile page with a message of "Registration Successful" and a message which tells that user has not 
+* The Register page will have a form to enter the Username and Password. This will also have some input conditions, same as the Login Form.
+* Submit button is there, which will take the user to the Profile page with a message of "Registration Successful" and a message which tells that the user has not 
  posted anything yet.
-* For returning Users, One Login link is given below the form.
+* For returning Users, the One Login link is given below the form.
 
 **Contact Us Page**
 
-* One contact form is given which is visible to every users, even if user has not registered with the site. 
-* It is addressed as **Suggestions and Complaints** , So that user user will feel free to give any suggestions and complaints if they have any.
-* It has **Full name**, **Email**, and one **Feedback** section. 
-* Feedback section is a Textarea.
+* One contact form is given which is visible to every user, even if the user has not registered with the site. 
+* It is addressed as **Suggestions and Complaints**, So that the users will feel free to give any suggestions and complaints if they have any.
+* It has a **Full name**, **Email**, and one **Feedback** section. 
+* the feedback section is a Textarea.
 * One **Cancel** and one **Submit** button are given. The Submit button's text will change to **Feedback Sent** after successfully sending the feedback. 
   One message will also pop up stating that **Your Feedback is submitted** or **Try Again** if it fails.
 * This contact form code is referred from my second Milestone project with some changes in the email template.
 
 **Profile Page**
 
-* The profile page is the first page the user see after logging in or Registering for the first time.
-* This page has One Welcome note with current user name.
+* The profile page is the first page the user sees after logging in or Registering for the first time.
+* This page has One Welcome note with the current user name.
 * This page will show all the Ads posted by the user. If the User has not posted anything then 
-  it will show a link to Post Ad page, Where User can post it's ads.
+  it will show a link to the Post Ad page, Where the User can post its ads.
 
 **Post Ad Page**
 
@@ -345,19 +345,19 @@ by adding one code in the CSS Style sheet.
 
 **Edit Ad Page**
 
-* This page looks same as Post Ad page.
+* This page looks the same as the Post Ad page.
 * This page is directed from the View Ad page, where a button is given to Edit the post. 
   That button is only visible to the owner of the post and Admin of the site.
 * When the Ad owner clicks the edit button, all the fields populate with already filled data, which makes it easier to make the changes.
-* 2 buttons are given in the bottom of the form. One to Edit the changes and One to Cancel any changes. 
+* 2 buttons are given at the bottom of the form. One to Edit the changes and One to Cancel any changes. 
 * The **Edit Ad Button** will remain on the page with a flash message of " Ad Successfully Updated".
-* The **Cancel button** will bring the User to the Home page.
+* The **Cancel button** will bring the user to the Home page.
 
 **Delete Ad**
 
 * The Delete Ad feature is given to every ad with a button on the view Ad page, Which is visible to only the Owner of the post and the Admin of the site.
-* When the Delete button is clicked One modal pops up, with a message of **Confirm Deletion**, which has 2 buttons, 
-  The **Cancel** button cancels the modal and user remains on the same page. The **Delete** button deletes the ad and takes the user to the **Home Page**.
+* When the Delete button is clicked One modal pop up, with a message of **Confirm Deletion**, which has 2 buttons, 
+  The **Cancel** button cancels the modal, and the user remains on the same page. The **Delete** button deletes the ad and takes the user to the **Home Page**.
 
 **Manage Categories**
 
@@ -371,20 +371,20 @@ by adding one code in the CSS Style sheet.
 
 **Delete Modal**
 
-* The Delete funtion of the site has given a defensive programming by adding one Modal from MaterializeCSS. 
+* The Delete function of the site has given defensive programming by adding one Modal from MaterializeCSS. 
 * The modal asks about the confirmation and works accordingly.
 * This Modal is referred from [MaterializeCSS.com](https://materializecss.com/modals.html)
 
 **Logout**
 
 * The **Logout** link is given in the Navbar and visible only after the user is logged in.
-* When clicking on the Logout link, The user is logged out from the session and directed back to LogIn page.
+* When clicking on the Logout link, The user is logged out from the session and directed back to the Login page.
 
 **Error Handler**
 
-* Two Error Handlers are provided for the better performance of the site, if something wrong happens.
-* One is 404 error handler and another is 500 Internal error handler.
-* This pages have one image of a man looking at the 404 written and looks confused.
+* Two Error Handlers are provided for the better performance of the site if something wrong happens.
+* One is a 404 error handler and another is a 500 Internal error handler.
+* These pages have one image of a man looking at the 404 written and looks confused.
 * The text tells them to click on the **Ads** word, which directs the user to the **Home page**.
 
 **Secure Password**
@@ -395,11 +395,11 @@ by adding one code in the CSS Style sheet.
 ### **Features to be implemented in future**
 
 * One wishlist will be added with every Ad posted. By clicking on that ad the User can save that ad in his/her Bucket.
-* Money transaction can also be implemented in the app only.
-* Direct Email facility may be added in the future, so that buyer can direct contact the seller.
-* Online chat facility or message thread may be added to discuss about the item with the seller.
-* In the current version, email and telephone of seller is visible to all, which is not a good practice in data protection act.
- so, In future it would be considered to hide it and add some another portal to contact the seller.
+* Money transactions can also be implemented in the app only.
+* Direct Email facility may be added in the future, so that buyer can directly contact the seller.
+* Online chat facility or message thread may be added to discuss the item with the seller.
+* In the current version, the email and the telephone of the seller are visible to all, which is not a good practice in the data protection act.
+ so, In the future, it would be considered to hide it and add another portal to contact the seller.
 
 [Go back to Top](#table-of-content)
 
