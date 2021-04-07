@@ -389,7 +389,32 @@ Testing client stories from UX part of [README.md](README.md)
 [Go to Top](#testing)
 ***
 ## **Lighthouse**
- * The lighthouse performance score was 67 in the beginning, after changing all the px to rem in style.css file, the score is increased to 72.
+ * The Lighthouse testing done in the beginning was giving not very good result.
+
+   ![image](static/images/lighthouse.JPG)
+
+   So, the suggestion given by the DEvtools were followed and these steps are taken:
+
+   * The suggestion was to add meta description in the head tag. Which is done by doing this.
+
+      ![image](static/docs/meta.JPG)
+
+    * The suggestion was to add rel where target blank is given. Target blank ia given in the Footer with Github and Linkedin links.
+      so the code is added and now it looks like this.
+
+      ![image](static/docs/rel.JPG)
+
+    * The suggestion was to add aria-label in the search bar cancel anchor tag. The code is added .
+
+      ![image](static/docs/aria.JPG)
+
+    * The Hero image was taking a long time to load, so I ahve reduced the size of the image by TinyPNG and added it back.
+
+    After doing all this changes the Lighthouse score is finally this.
+
+    ![image](static/docs/lighthousefinal.JPG)
+
+
 
 [Go to Top](#testing)
 ***
