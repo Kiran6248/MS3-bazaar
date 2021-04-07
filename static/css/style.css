@@ -1,15 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body {
     font-family: "Roboto Slab", sans-serif;
     font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 .text-shadow {
@@ -65,7 +79,8 @@ nav ul li a {
 
 .card .card-image-main img {
     height: 21.87rem !important;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100% !important;
     overflow: hidden;
 }
@@ -73,7 +88,8 @@ nav ul li a {
 .card .card-image img {
     height: 35.5rem;
     overflow: hidden;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100% !important;
 }
 

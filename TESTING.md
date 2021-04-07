@@ -408,6 +408,10 @@ Testing client stories from UX part of [README.md](README.md)
 
       ![image](static/docs/aria.JPG)
 
+    * The suggestion was to add async or defer in script tag if it is in head. 
+
+      ![image](static/docs/emailjs.JPG)
+
     * The Hero image was taking a long time to load, so I ahve reduced the size of the image by TinyPNG and added it back.
 
     After doing all this changes the Lighthouse score is finally this.
