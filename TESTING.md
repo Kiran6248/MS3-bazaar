@@ -56,7 +56,13 @@
 
   * W3C markup validation service is used for the testing of the **HTML** of all  HTML pages and 
 
-    The results can be seen here.
+    The initial result was this.
+
+    ![image](static/docs/htmlvalidation.JPG)
+
+  So, the Type is removed from script tag, Aria-label is removed from search a tag, and section is removed. The final result is this
+
+![image](static/docs/html.JPG)
 
 ### **CSS**
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
@@ -65,19 +71,34 @@
 
     The result can be seen here.
 
-* [style.css]()
+* style.css
+    <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+        
+
 
 ### **Javascript**
 [JSHint](https://jshint.com/)
 
-* JSHint, a JavaScript code quality tool was used to test the **JavaScript** codes of all 3 js pages from the project.
+* JSHint, a JavaScript code quality tool was used to test the **JavaScript** codes of all 2 js pages from the project.
 
     The result can be seen here.
 
-* []() 
+* ![script.js](static/docs/script.JPG) 
+ 
+  This is warning fron using jQuery $ sign and can be ignored.
 
 ### **Python**
 [Python Validator](http://pep8online.com/)
+
+ The result can be seen here.
+
+ ![python](static/docs/python.JPG)
 
 ***
 ## **Client Stories Testing**
@@ -404,7 +425,8 @@ Testing client stories from UX part of [README.md](README.md)
 
       ![image](static/docs/rel.JPG)
 
-    * The suggestion was to add aria-label in the search bar cancel anchor tag. The code is added .
+    * The suggestion was to add aria-label in the search bar cancel anchor tag. The code is added but it was 
+     later removed as it was giving error in HTML validation .
 
       ![image](static/docs/aria.JPG)
 
