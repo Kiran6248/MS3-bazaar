@@ -529,6 +529,7 @@ Testing client stories from UX part of [README.md](README.md)
 
 
 #### **Open Bug**
+* The console shows error that 'env' imported but never used, env is hidden in the .gitignore file.
 
 * The Home page(get_ads.html) is showing one warning in console on line 44 that special chahracters must be escaped.
   the character [>] is a part of the if loop and can not be escaped.
