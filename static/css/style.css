@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 .card .card-image img {
-    height: 35.5rem;
+    height: 38rem;
     overflow: hidden;
     -o-object-fit: cover;
        object-fit: cover;
@@ -139,4 +139,12 @@ nav ul li a {
     .brand-logo {
         margin-left: 25px;
     }
+}
+
+@media only screen and (max-width: 579px){
+    .card .card-image img {
+        height: 400px;
+   
+}
+
 }
