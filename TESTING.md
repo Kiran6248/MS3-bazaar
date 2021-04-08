@@ -34,6 +34,7 @@
        * [Contact Us Page](#contact-us-page)
        * [Login Page](#login-page)
        * [Register Page](#register-page)
+       * [Error Handler](#error-handler)
 
 * [Responsiveness](#responsiveness)
 
@@ -370,7 +371,7 @@ Testing client stories from UX part of [README.md](README.md)
  5. Check the small text below the form, click the log in link, and the Login form gets opens.
  6. Repeat the steps with the Mobile view. 
 
-### **404 & 500 pages**
+### **Error Handler**
 
  1. On the live Heroku app , type something (which is not the name of any page of the site) in the URL .
  2. Press enter and 404 image will show. 
