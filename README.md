@@ -36,6 +36,8 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
         * [Typography](#typography)
         * [Images](#images)
 
+* [Database model](#database-model)
+
 * [Features](#features)
     * [Features Used](#features-used)
     * [Features to be implementd in Future](#features-to-be-implemented-in-future)
@@ -224,6 +226,46 @@ The Hero Image is taken from Pexel.com. It is a market image of Dubai, clicked b
 [Go back to Top](#table-of-content)
 ***
 
+## **Database model**
+
+MongoDB's non-relational database structure is used for this type of site as there are only a few relationship between the various collections. 
+
+ **Ads Collection**
+ | Key           | Type      | Notes |
+| ------------- |:----------:| :------:|
+| _id           | ObjectId  |          |
+| category_name | string    | Admin's choosen title of the category. can not be changed. |  
+| ad_title    | string    | The user's chosen title of the Ad. |
+| ad_description | string | Brief description about the item. |
+| photo_url  | string  | Photo psted by the user. |
+| price | string | Item price quoted by the user. |
+| condition_type | string | Condition choosen by the users. |
+| location | string | User location posted by the user. |
+| email | string | Email id of the user. |
+| telephone | string | Telephone number of the User. |
+| is_available | string | To choose between 2 status. |
+| posted_by | string | Stored from the entered username. |
+
+ **Categories Collection**
+ | Key           | Type      | Notes |
+| ------------- |:----------:| :------:|
+| _id           | ObjectId  |          |
+| category_name | string    | Admin's choosen title of the category. can not be changed. |  
+
+ **Conditions Collection**
+ | Key           | Type      | Notes |
+| ------------- |:----------:| :------:|
+| _id           | ObjectId  |          |
+| condition_type | string    | Added by admin. Can be choosen any one by the User |  
+
+ **Users Collection**
+ | Key           | Type      | Notes |
+| ------------- |:----------:| :------:|
+| _id           | ObjectId  |          |
+| username | string    | Choosen by the User when registering. | 
+| password | string | choosen by the user when registering. | 
+
+ 
 ## **Features**
 
 ### **Features Used**
