@@ -263,9 +263,10 @@ MongoDB's non-relational database structure is used for this type of site as the
 | ------------- |:----------:| :------:|
 | _id           | ObjectId  |          |
 | username | string    | Choosen by the User when registering. | 
-| password | string | choosen by the user when registering. | 
+| password | string | Choosen by the user when registering. | 
 
- 
+ [Go back to Top](#table-of-content)
+ ***
 ## **Features**
 
 ### **Features Used**
