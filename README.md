@@ -128,7 +128,7 @@ This site is made by using my newly learned skill of Backend Development with th
 
 The aim of making this site is to make a website that has CRUD mechanism and Database access functionality.
 I decided to make a Second-Hand good buying and selling site, which will work as a platform for peoples to meet potential buyers for their things, 
-as well buyers can find items at reasonable rates.
+as well as buyers can find items at reasonable rates.
 
 ### **Scope**
 
@@ -180,7 +180,7 @@ and orange(#ff9800) and their shades are used according to the page requirement.
 
 **Core**
 
-Two shades of Materialize Teal is used as the core element of the page, namely the Nvabar, Footer and Card color.
+Two shades of Materialize Teal is used as the core element of the page, namely the Navbar, Footer and Card color.
 
 *  ![#009688](https://via.placeholder.com/15/009688/000000?text=+) `#009688`(teal)
 *  ![#00695c](https://via.placeholder.com/15/00695c/000000?text=+) `#00695c`(teal darken-3)
@@ -198,7 +198,7 @@ It is important for the buttons to have consistent colour with the intuitive sug
 Teal is used for **Login**, **Register**, Contact form **submit**, **Post ad**, **Edit Ad**,
 **Add categories**, and **Edit category**.
 
-Orange is used for the **Delete** , modal delete confirmation, **Delete** and Contact form **Cancel** button
+Orange is used for the **Delete** . Modal delete confirmation, **Delete** and Contact form **Cancel** button
 
 *  ![#009688](https://via.placeholder.com/15/009688/000000?text=+) `#009688`(teal)
 *  ![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+) `#ff9800`(orange)
@@ -274,7 +274,7 @@ by adding one code in the CSS Style sheet.
   8. Email
   9. Telephone
   10. Availability (Available or Sold)
-* The availability is shown by a **tooltip and one **badge** also, which is *Green* in color for available ads and *Red* for sold.
+* The availability is shown by a **tooltip** and one **badge** also, which is *Green* in color for available ads and *Red* for sold.
 * There is a **Back** button on top of the page which takes back to the **Home** page.
 * One **Edit** and One **Delete** buttons are also there on the top of the page, which is visible only to the owner of the Ad(Posted by) and to the Admin of the site.
 
@@ -335,6 +335,7 @@ by adding one code in the CSS Style sheet.
   7. Household
   8. Jewellery
   9. Shoes
+
     These categories can be added or removed by the Admin.
 * The Condition Field have 3 types of conditions, from which the user can select one.
   1. New
@@ -352,12 +353,14 @@ by adding one code in the CSS Style sheet.
 * 2 buttons are given at the bottom of the form. One to Edit the changes and One to Cancel any changes. 
 * The **Edit Ad Button** will remain on the page with a flash message of " Ad Successfully Updated".
 * The **Cancel button** will bring the user to the Home page.
+* One defensive code is used for this section and added in app.py to prevent any user to do editing by making chnages from the URL.
 
 **Delete Ad**
 
 * The Delete Ad feature is given to every ad with a button on the view Ad page, Which is visible to only the Owner of the post and the Admin of the site.
 * When the Delete button is clicked One modal pop up, with a message of **Confirm Deletion**, which has 2 buttons, 
   The **Cancel** button cancels the modal, and the user remains on the same page. The **Delete** button deletes the ad and takes the user to the **Home Page**.
+* One defensive code is used for this section and added in app.py to prevent any user to delete the ad by making chnages from the URL.
 
 **Manage Categories**
 
@@ -447,6 +450,7 @@ by adding one code in the CSS Style sheet.
  * [EmailJS](https://www.emailjs.com/) is used to connect the contact form to the email address.
  * [Snipping Tool](https://en.wikipedia.org/wiki/Snipping_Tool) was used to take screenshots of the images and codes.
  * [ImgBB](https://imgbb.com/) is used to store my images.
+ * [TinyPNG](https://tinypng.com/) is used to reduce the size of the Hero Image.
 
  [Go back to Top](#table-of-content)
 ***
