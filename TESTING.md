@@ -370,6 +370,13 @@ Testing client stories from UX part of [README.md](README.md)
  5. Check the small text below the form, click the log in link, and the Login form gets opens.
  6. Repeat the steps with the Mobile view. 
 
+### **404 & 500 pages**
+
+ 1. On the live Heroku app , type something (which is not the name of any page of the site) in the URL .
+ 2. Press enter and 404 image will show. 
+ 3. Click to the word "Ads" and the user is back to the Home page.
+   
+
  [Go to Top](#testing)
 ***
 
